@@ -1,0 +1,78 @@
+0,status,1,VILLAGER,ALIVE,P2
+0,status,2,SEER,ALIVE,P3
+0,status,3,WEREWOLF,ALIVE,P4
+0,status,4,VILLAGER,ALIVE,P5
+0,status,5,POSSESSED,ALIVE,Random -S
+0,divine,2,4,HUMAN
+1,status,1,VILLAGER,ALIVE,P2
+1,status,2,SEER,ALIVE,P3
+1,status,3,WEREWOLF,ALIVE,P4
+1,status,4,VILLAGER,ALIVE,P5
+1,status,5,POSSESSED,ALIVE,Random -S
+1,talk,0,0,2,COMINGOUT Agent[02] SEER
+1,talk,1,0,5,VOTE Agent[04]
+1,talk,2,0,1,Skip
+1,talk,3,0,4,Skip
+1,talk,4,0,3,Skip
+1,talk,5,1,3,COMINGOUT Agent[03] SEER
+1,talk,6,1,4,Skip
+1,talk,7,1,2,DAY 1 (DIVINED Agent[04] HUMAN)
+1,talk,8,1,1,Skip
+1,talk,9,1,5,VOTE Agent[01]
+1,talk,10,2,3,DAY 1 (DIVINED Agent[04] HUMAN)
+1,talk,11,2,5,VOTE Agent[03]
+1,talk,12,2,4,AND (VOTE Agent[05]) (REQUEST ANY (VOTE Agent[05]))
+1,talk,13,2,2,AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))
+1,talk,14,2,1,AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))
+1,talk,15,3,5,VOTE Agent[01]
+1,talk,16,3,4,AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))
+1,talk,17,3,3,AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))
+1,talk,18,3,1,Skip
+1,talk,19,3,2,Skip
+1,talk,20,4,4,Skip
+1,talk,21,4,3,Skip
+1,talk,22,4,1,Skip
+1,talk,23,4,2,Skip
+1,talk,24,4,5,VOTE Agent[02]
+1,talk,25,5,5,VOTE Agent[03]
+1,talk,26,5,1,Over
+1,talk,27,5,3,Skip
+1,talk,28,5,2,Over
+1,talk,29,5,4,Skip
+1,talk,30,6,2,Over
+1,talk,31,6,1,Over
+1,talk,32,6,3,Over
+1,talk,33,6,4,Over
+1,talk,34,6,5,VOTE Agent[04]
+1,talk,35,7,4,Over
+1,talk,36,7,5,VOTE Agent[02]
+1,talk,37,7,2,Over
+1,talk,38,7,3,Over
+1,talk,39,7,1,Over
+1,talk,40,8,4,Over
+1,talk,41,8,5,VOTE Agent[02]
+1,talk,42,8,3,Over
+1,talk,43,8,1,Over
+1,talk,44,8,2,Over
+1,talk,45,9,4,Over
+1,talk,46,9,2,Over
+1,talk,47,9,5,VOTE Agent[01]
+1,talk,48,9,3,Over
+1,talk,49,9,1,Over
+1,talk,50,10,3,Over
+1,talk,51,10,5,Over
+1,talk,52,10,1,Over
+1,talk,53,10,4,Over
+1,talk,54,10,2,Over
+1,vote,1,3
+1,vote,2,3
+1,vote,3,2
+1,vote,4,3
+1,vote,5,1
+1,execute,3,WEREWOLF
+2,status,1,VILLAGER,ALIVE,P2
+2,status,2,SEER,ALIVE,P3
+2,status,3,WEREWOLF,DEAD,P4
+2,status,4,VILLAGER,ALIVE,P5
+2,status,5,POSSESSED,ALIVE,Random -S
+2,result,4,0,VILLAGER
