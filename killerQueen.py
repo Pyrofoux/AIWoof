@@ -30,11 +30,12 @@ class SampleAgent(object):
 		self.base_info = base_info
 		self.game_setting = game_setting
 		#printGameSetting(game_setting)
+		printBaseInfo(base_info)
 
 	def update(self, base_info, diff_data, request):
 		self.base_info = base_info
 		#print(getTimeStamp()+" inside Update")
-		#printBaseInfo(base_info)
+		printBaseInfo(base_info)
 		#printDiffData(diff_data)
 
 	def dayStart(self):
@@ -102,4 +103,4 @@ def parseArgs(args):
 
 if __name__ == '__main__':
 	parseArgs(sys.argv[1:])
-	aiwolfpy.connect_parse(SampleAgent("Random -S"))
+	aiwolfpy.connect_parse(SampleAgent("Killer Q."))
