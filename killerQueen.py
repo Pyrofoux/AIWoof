@@ -20,8 +20,8 @@ from profileManager import *
 
 class SampleAgent(object):
 
-	def __init__(self, agent_name):
-		self.myname = agent_name
+	def __init__(self, agentName):
+		self.myname = agentName
 		self.sleeptime = 0.1
 
 		clearLog()
@@ -29,23 +29,23 @@ class SampleAgent(object):
 	def getName(self):
 		return self.myname
 
-	def initialize(self, base_info, diff_data, game_setting):
-		self.base_info = base_info
-		self.game_setting = game_setting
+	def initialize(self, baseInfo, diffData, gameSetting):
+		self.baseInfo = baseInfo
+		self.gameSetting = gameSetting
 
-		log(game_setting)
-		log(base_info)
+		log(gameSetting)
+		log(baseInfo)
 
-		createProfiles(base_info, game_setting)
+		createProfiles(baseInfo, gameSetting)
 
 
 
-	def update(self, base_info, diff_data, request):
-		self.base_info = base_info
+	def update(self, baseInfo, diffData, request):
+		self.baseInfo = baseInfo
 		#print(getTimeStamp()+" inside Update")
-		#printBaseInfo(base_info)
+		#printBaseInfo(baseInfo)
 
-		for index, row in diff_data.iterrows():
+		for index, row in diffData.iterrows():
 			log(row)
 
 
@@ -58,38 +58,38 @@ class SampleAgent(object):
 
 	def talk(self):
 		#print(getTimeStamp()+" inside Talk")
-		selected = randomAliveId(self.base_info)
+		selected = randomAliveId(self.baseInfo)
 		#print("Selected ID for talk: "+str(selected))
 		return cb.vote(selected)
 
 	def whisper(self):
 		#print(getTimeStamp()+" inside Whisper")
-		selected = randomAliveId(self.base_info)
+		selected = randomAliveId(self.baseInfo)
 		#print("Selected ID for whisper: "+str(selected))
 		return cb.attack(selected)
 
 	def vote(self):
 		#print(getTimeStamp()+" inside Vote")
-		selected = randomAliveId(self.base_info)
+		selected = randomAliveId(self.baseInfo)
 		#print("Selected ID for vote: "+str(selected))
 		return selected
 
 	def attack(self):
 		#print(getTimeStamp()+" inside Attack")
-		selected = randomAliveId(self.base_info)
+		selected = randomAliveId(self.baseInfo)
 		#print("Selected ID for attack: "+str(selected))
 		return selected
 
 	def divine(self):
 		#print(getTimeStamp()+" inside Divine")
 
-		selected = randomAliveId(self.base_info)
+		selected = randomAliveId(self.baseInfo)
 		#print("Selected ID for divine: "+str(selected))
 		return selected
 
 	def guard(self):
 		#print(getTimeStamp()+" inside Guard")
-		selected = randomAliveId(self.base_info)
+		selected = randomAliveId(self.baseInfo)
 		#print("Selected ID for guard: "+str(selected))
 		return selected
 
