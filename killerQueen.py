@@ -15,7 +15,8 @@ import random
 import optparse
 import sys
 
-from utility import *
+from toolbox import *
+from profileManager import *
 
 class SampleAgent(object):
 
@@ -23,83 +24,88 @@ class SampleAgent(object):
 		self.myname = agent_name
 		self.sleeptime = 0.1
 
+		clearLog()
+
 	def getName(self):
 		return self.myname
 
 	def initialize(self, base_info, diff_data, game_setting):
 		self.base_info = base_info
 		self.game_setting = game_setting
-		#printGameSetting(game_setting)
-		printBaseInfo(base_info)
+
+		log(game_setting)
+		log(base_info)
+
+		createProfiles(base_info, game_setting)
+
+
 
 	def update(self, base_info, diff_data, request):
 		self.base_info = base_info
 		#print(getTimeStamp()+" inside Update")
-		printBaseInfo(base_info)
-		#printDiffData(diff_data)
+		#printBaseInfo(base_info)
+
+		for index, row in diff_data.iterrows():
+			log(row)
+
 
 	def dayStart(self):
+
+
+
 		#print(" inside dayStart")
 		return None
 
 	def talk(self):
 		#print(getTimeStamp()+" inside Talk")
-		selected = randomPlayerId(self.base_info)
+		selected = randomAliveId(self.base_info)
 		#print("Selected ID for talk: "+str(selected))
 		return cb.vote(selected)
 
 	def whisper(self):
 		#print(getTimeStamp()+" inside Whisper")
-		selected = randomPlayerId(self.base_info)
+		selected = randomAliveId(self.base_info)
 		#print("Selected ID for whisper: "+str(selected))
 		return cb.attack(selected)
 
 	def vote(self):
 		#print(getTimeStamp()+" inside Vote")
-		selected = randomPlayerId(self.base_info)
+		selected = randomAliveId(self.base_info)
 		#print("Selected ID for vote: "+str(selected))
 		return selected
 
 	def attack(self):
 		#print(getTimeStamp()+" inside Attack")
-		selected = randomPlayerId(self.base_info)
+		selected = randomAliveId(self.base_info)
 		#print("Selected ID for attack: "+str(selected))
 		return selected
 
 	def divine(self):
 		#print(getTimeStamp()+" inside Divine")
-		selected = randomPlayerId(self.base_info)
+
+		selected = randomAliveId(self.base_info)
 		#print("Selected ID for divine: "+str(selected))
 		return selected
 
 	def guard(self):
 		#print(getTimeStamp()+" inside Guard")
-		selected = randomPlayerId(self.base_info)
+		selected = randomAliveId(self.base_info)
 		#print("Selected ID for guard: "+str(selected))
 		return selected
 
 	def finish(self):
+
+
+
 		#print(getTimeStamp()+" inside Finish")
 		return None
 
-def parseArgs(args):
-	usage = "usage: %prog [options]"
-	parser = optparse.OptionParser(usage=usage)
 
-	# need this to ensure -h can be used as an option
-	parser.set_conflict_handler("resolve")
 
-	parser.add_option('-h', action="store", type="string", dest="hostname",
-		help="IP address of the AIWolf server", default=None)
-	parser.add_option('-p', action="store", type="int", dest="port",
-		help="Port to connect in the server", default=None)
-	parser.add_option('-r', action="store", type="string", dest="port",
-		help="Role request to the server", default=-1)
 
-	(opt, args) = parser.parse_args()
-	if opt.hostname == None or opt.port == -1:
-		parser.print_help()
-		sys.exit()
+
+
+
 
 if __name__ == '__main__':
 	parseArgs(sys.argv[1:])
