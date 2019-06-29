@@ -5,7 +5,9 @@ import random
 import logging
 import os
 
+
 import optparse
+from string import digits
 
 from tabulate import tabulate
 
@@ -38,6 +40,17 @@ def getAliveId(base_info):
 			ids.append(int(key))
 	return ids
 
+def formatDivine(text):
+
+	chunked = text.split()
+	info = {}
+	info['team'] = chunked[2]
+	info['id'] = formatAgentId(chunked[1])
+	return info
+
+def formatAgentId(txt):
+	return str(int(''.join(c for c in txt if c in digits)))
+
 
 
 logFileName = "../log.last"
@@ -52,6 +65,7 @@ def log(input=""):
 
 	f.write(output)
 	f.write('\n')
+
 
 
 

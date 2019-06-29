@@ -1,6 +1,7 @@
 from toolbox import *
 
 
+#Mapping the corresponding for a role
 role2team = {
     "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'HUMAN', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
 }
@@ -90,11 +91,25 @@ class Tracker(object):
             if(self.profiles[id]['alive']):
                 self.totalAlivePlayers += 1
 
-
+        #Process every information in diffData
         for index, row in diffData.iterrows():
 
-            True
-            #if row.type == 'divine':
+            #Update divination result
+            ## TODO: Implement the consequences on probability of divination
+            # if you divine the only wolf, proba -> 1 -> should be sure about the role
+            # Idea : check the 1 probability on total of team at the end,
+            # Update team if needed, update role if needed
+            # If one update was made, recall the probability function  
+            if row.type == 'divine':
+
+                result = formatDivine(row.text)
+                self.profiles[result['id']]['team'] = result['team']
+                self.profiles[result['id']]['teamKnown'] = True
+
+            if row.type == 'talk'
+            log(row)
+
+
 
 
         self.updateRoleEstimations()
