@@ -1,5 +1,14 @@
-{"enableNoAttack": false, "enableNoExecution": false, "enableRoleRequest": true, "maxAttackRevote": 1, "maxRevote": 1, "maxSkip": 2, "maxTalk": 10, "maxTalkTurn": 20, "maxWhisper": 10, "maxWhisperTurn": 20, "playerNum": 5, "randomSeed": 8528942025861373791, "roleNumMap": {"BODYGUARD": 0, "MEDIUM": 0, "POSSESSED": 1, "SEER": 1, "FOX": 0, "FREEMASON": 0, "VILLAGER": 2, "ANY": 0, "WEREWOLF": 1}, "talkOnFirstDay": false, "timeLimit": 1000, "validateUtterance": true, "votableInFirstDay": false, "voteVisible": true, "whisperBeforeRevote": false}
-{"agentIdx": 5, "myRole": "SEER", "roleMap": {"5": "SEER"}, "day": 0, "remainTalkMap": {"1": 10, "2": 10, "3": 10, "4": 10, "5": 10}, "remainWhisperMap": {}, "statusMap": {"1": "ALIVE", "2": "ALIVE", "3": "ALIVE", "4": "ALIVE", "5": "ALIVE"}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 5, 'randomSeed': 8025809472190960480, 'roleNumMap': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 2, 'ANY': 0, 'WEREWOLF': 1}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 5, 'myRole': 'SEER', 'roleMap': {'5': 'SEER'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE'}}
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
 day                            0
 type                      divine
 idx                            0
@@ -7,265 +16,321 @@ turn                           0
 agent                          5
 text     DIVINED Agent[03] HUMAN
 Name: 0, dtype: object
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
 day         1
 type     talk
 idx         0
 turn        0
-agent       2
+agent       3
 text     Skip
 Name: 0, dtype: object
-day                   1
-type               talk
-idx                   1
-turn                  0
-agent                 5
-text     VOTE Agent[01]
-Name: 1, dtype: object
+
 day         1
 type     talk
-idx         2
+idx         1
 turn        0
 agent       4
 text     Skip
+Name: 1, dtype: object
+
+day                   1
+type               talk
+idx                   2
+turn                  0
+agent                 5
+text     VOTE Agent[03]
 Name: 2, dtype: object
+
 day         1
 type     talk
 idx         3
 turn        0
-agent       1
+agent       2
 text     Skip
 Name: 3, dtype: object
-day         1
-type     talk
-idx         4
-turn        0
-agent       3
-text     Skip
+
+day                             1
+type                         talk
+idx                             4
+turn                            0
+agent                           1
+text     COMINGOUT Agent[01] SEER
 Name: 4, dtype: object
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+day                   1
+type               talk
+idx                   5
+turn                  1
+agent                 5
+text     VOTE Agent[02]
+Name: 0, dtype: object
+
+day                             1
+type                         talk
+idx                             6
+turn                            1
+agent                           3
+text     COMINGOUT Agent[03] SEER
+Name: 1, dtype: object
+
+day                                    1
+type                                talk
+idx                                    7
+turn                                   1
+agent                                  1
+text     DAY 1 (DIVINED Agent[05] HUMAN)
+Name: 2, dtype: object
+
 day         1
 type     talk
-idx         5
+idx         8
 turn        1
 agent       4
 text     Skip
-Name: 0, dtype: object
-day         1
-type     talk
-idx         6
-turn        1
-agent       2
-text     Skip
-Name: 1, dtype: object
-day         1
-type     talk
-idx         7
-turn        1
-agent       3
-text     Skip
-Name: 2, dtype: object
-day                   1
-type               talk
-idx                   8
-turn                  1
-agent                 5
-text     VOTE Agent[01]
 Name: 3, dtype: object
+
 day         1
 type     talk
 idx         9
 turn        1
-agent       1
+agent       2
 text     Skip
 Name: 4, dtype: object
-day                   1
-type               talk
-idx                  10
-turn                  2
-agent                 5
-text     VOTE Agent[01]
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+day                                                      1
+type                                                  talk
+idx                                                     10
+turn                                                     2
+agent                                                    4
+text     AND (VOTE Agent[05]) (REQUEST ANY (VOTE Agent[...
 Name: 0, dtype: object
+
 day                                                      1
 type                                                  talk
 idx                                                     11
 turn                                                     2
-agent                                                    4
-text     AND (VOTE Agent[05]) (REQUEST ANY (VOTE Agent[...
+agent                                                    2
+text     AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[...
 Name: 1, dtype: object
-day                                                      1
-type                                                  talk
-idx                                                     12
-turn                                                     2
-agent                                                    3
-text     AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[...
+
+day                   1
+type               talk
+idx                  12
+turn                  2
+agent                 5
+text     VOTE Agent[01]
 Name: 2, dtype: object
-day                                                      1
-type                                                  talk
-idx                                                     13
-turn                                                     2
-agent                                                    1
-text     AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[...
+
+day                                       1
+type                                   talk
+idx                                      13
+turn                                      2
+agent                                     3
+text     DAY 1 (DIVINED Agent[01] WEREWOLF)
 Name: 3, dtype: object
+
 day                                                      1
 type                                                  talk
 idx                                                     14
 turn                                                     2
-agent                                                    2
-text     AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[...
+agent                                                    1
+text     BECAUSE (AND (COMINGOUT Agent[01] SEER) (Agent...
 Name: 4, dtype: object
-day         1
-type     talk
-idx        15
-turn        3
-agent       1
-text     Skip
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+day                                                      1
+type                                                  talk
+idx                                                     15
+turn                                                     3
+agent                                                    1
+text     BECAUSE (XOR (ESTIMATE Agent[03] WEREWOLF) (ES...
 Name: 0, dtype: object
-day         1
-type     talk
-idx        16
-turn        3
-agent       3
-text     Skip
+
+day                                                      1
+type                                                  talk
+idx                                                     16
+turn                                                     3
+agent                                                    4
+text     AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[...
 Name: 1, dtype: object
-day                   1
-type               talk
-idx                  17
-turn                  3
-agent                 5
-text     VOTE Agent[02]
+
+day                                                      1
+type                                                  talk
+idx                                                     17
+turn                                                     3
+agent                                                    3
+text     BECAUSE (DAY 1 (DIVINED Agent[01] WEREWOLF)) (...
 Name: 2, dtype: object
+
 day                                                      1
 type                                                  talk
 idx                                                     18
 turn                                                     3
 agent                                                    2
-text     AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[...
+text     AND (VOTE Agent[05]) (REQUEST ANY (VOTE Agent[...
 Name: 3, dtype: object
-day                                                      1
-type                                                  talk
-idx                                                     19
-turn                                                     3
-agent                                                    4
-text     AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[...
+
+day                   1
+type               talk
+idx                  19
+turn                  3
+agent                 5
+text     VOTE Agent[02]
 Name: 4, dtype: object
-day         1
-type     talk
-idx        20
-turn        4
-agent       3
-text     Skip
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+day                   1
+type               talk
+idx                  20
+turn                  4
+agent                 5
+text     VOTE Agent[02]
 Name: 0, dtype: object
+
 day                                                      1
 type                                                  talk
 idx                                                     21
 turn                                                     4
 agent                                                    2
-text     AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[...
-Name: 1, dtype: object
-day                                                      1
-type                                                  talk
-idx                                                     22
-turn                                                     4
-agent                                                    4
 text     AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[...
-Name: 2, dtype: object
+Name: 1, dtype: object
+
 day         1
 type     talk
-idx        23
+idx        22
 turn        4
 agent       1
 text     Skip
+Name: 2, dtype: object
+
+day                                                      1
+type                                                  talk
+idx                                                     23
+turn                                                     4
+agent                                                    3
+text     BECAUSE (DAY 1 (DIVINED Agent[01] WEREWOLF)) (...
 Name: 3, dtype: object
-day                   1
-type               talk
-idx                  24
-turn                  4
-agent                 5
-text     VOTE Agent[03]
+
+day         1
+type     talk
+idx        24
+turn        4
+agent       4
+text     Skip
 Name: 4, dtype: object
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
 day         1
 type     talk
 idx        25
 turn        5
-agent       3
-text     Over
-Name: 0, dtype: object
-day         1
-type     talk
-idx        26
-turn        5
 agent       2
 text     Skip
+Name: 0, dtype: object
+
+day                   1
+type               talk
+idx                  26
+turn                  5
+agent                 5
+text     VOTE Agent[01]
 Name: 1, dtype: object
+
 day                                                      1
 type                                                  talk
 idx                                                     27
 turn                                                     5
 agent                                                    4
-text     AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[...
+text     AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[...
 Name: 2, dtype: object
-day                   1
-type               talk
-idx                  28
-turn                  5
-agent                 5
-text     VOTE Agent[02]
+
+day         1
+type     talk
+idx        28
+turn        5
+agent       1
+text     Skip
 Name: 3, dtype: object
+
 day         1
 type     talk
 idx        29
 turn        5
-agent       1
-text     Over
-Name: 4, dtype: object
-day         1
-type     talk
-idx        30
-turn        6
-agent       2
-text     Skip
-Name: 0, dtype: object
-day         1
-type     talk
-idx        31
-turn        6
 agent       3
-text     Over
+text     Skip
+Name: 4, dtype: object
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+day                                                      1
+type                                                  talk
+idx                                                     30
+turn                                                     6
+agent                                                    2
+text     AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[...
+Name: 0, dtype: object
+
+day                   1
+type               talk
+idx                  31
+turn                  6
+agent                 5
+text     VOTE Agent[04]
 Name: 1, dtype: object
+
 day         1
 type     talk
 idx        32
 turn        6
-agent       4
+agent       3
 text     Skip
 Name: 2, dtype: object
+
 day         1
 type     talk
 idx        33
 turn        6
+agent       4
+text     Skip
+Name: 3, dtype: object
+
+day         1
+type     talk
+idx        34
+turn        6
 agent       1
 text     Over
-Name: 3, dtype: object
-day                   1
-type               talk
-idx                  34
-turn                  6
-agent                 5
-text     VOTE Agent[01]
 Name: 4, dtype: object
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
 day                   1
 type               talk
 idx                  35
 turn                  7
 agent                 5
-text     VOTE Agent[03]
+text     VOTE Agent[01]
 Name: 0, dtype: object
+
 day         1
 type     talk
 idx        36
 turn        7
-agent       3
-text     Over
+agent       2
+text     Skip
 Name: 1, dtype: object
+
 day         1
 type     talk
 idx        37
@@ -273,90 +338,107 @@ turn        7
 agent       1
 text     Over
 Name: 2, dtype: object
+
 day         1
 type     talk
 idx        38
 turn        7
-agent       4
-text     Skip
+agent       3
+text     Over
 Name: 3, dtype: object
-day         1
-type     talk
-idx        39
-turn        7
-agent       2
-text     Over
+
+day                                                      1
+type                                                  talk
+idx                                                     39
+turn                                                     7
+agent                                                    4
+text     AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[...
 Name: 4, dtype: object
-day         1
-type     talk
-idx        40
-turn        8
-agent       1
-text     Over
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+day                                                      1
+type                                                  talk
+idx                                                     40
+turn                                                     8
+agent                                                    2
+text     AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[...
 Name: 0, dtype: object
+
 day         1
 type     talk
 idx        41
 turn        8
-agent       2
+agent       3
 text     Over
 Name: 1, dtype: object
+
 day         1
 type     talk
 idx        42
 turn        8
-agent       3
-text     Over
+agent       4
+text     Skip
 Name: 2, dtype: object
+
+day         1
+type     talk
+idx        43
+turn        8
+agent       1
+text     Over
+Name: 3, dtype: object
+
 day                   1
 type               talk
-idx                  43
+idx                  44
 turn                  8
 agent                 5
 text     VOTE Agent[01]
-Name: 3, dtype: object
-day         1
-type     talk
-idx        44
-turn        8
-agent       4
-text     Over
 Name: 4, dtype: object
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
 day         1
 type     talk
 idx        45
 turn        9
-agent       1
+agent       3
 text     Over
 Name: 0, dtype: object
+
 day         1
 type     talk
 idx        46
 turn        9
-agent       2
-text     Over
+agent       4
+text     Skip
 Name: 1, dtype: object
+
 day         1
 type     talk
 idx        47
 turn        9
-agent       4
+agent       1
 text     Over
 Name: 2, dtype: object
-day                   1
-type               talk
-idx                  48
-turn                  9
-agent                 5
-text     VOTE Agent[01]
-Name: 3, dtype: object
+
 day         1
 type     talk
-idx        49
+idx        48
 turn        9
-agent       3
-text     Over
+agent       2
+text     Skip
+Name: 3, dtype: object
+
+day                   1
+type               talk
+idx                  49
+turn                  9
+agent                 5
+text     VOTE Agent[03]
 Name: 4, dtype: object
+
 day         1
 type     talk
 idx        50
@@ -364,48 +446,99 @@ turn       10
 agent       3
 text     Over
 Name: 5, dtype: object
+
 day         1
 type     talk
 idx        51
 turn       10
-agent       1
+agent       5
 text     Over
 Name: 6, dtype: object
+
 day         1
 type     talk
 idx        52
 turn       10
-agent       4
+agent       1
 text     Over
 Name: 7, dtype: object
+
 day         1
 type     talk
 idx        53
 turn       10
 agent       2
-text     Over
+text     Skip
 Name: 8, dtype: object
+
 day         1
 type     talk
 idx        54
 turn       10
-agent       5
+agent       4
 text     Over
 Name: 9, dtype: object
+
+day         1
+type     talk
+idx        55
+turn       11
+agent       5
+text     Over
+Name: 10, dtype: object
+
+day         1
+type     talk
+idx        56
+turn       11
+agent       4
+text     Over
+Name: 11, dtype: object
+
+day         1
+type     talk
+idx        57
+turn       11
+agent       1
+text     Over
+Name: 12, dtype: object
+
+day         1
+type     talk
+idx        58
+turn       11
+agent       3
+text     Over
+Name: 13, dtype: object
+
+day         1
+type     talk
+idx        59
+turn       11
+agent       2
+text     Over
+Name: 14, dtype: object
+
+{'1': {'id': '1', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+{'1': {'id': '1', 'alive': False, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
 day                   1
 type               vote
 idx                   0
 turn                  0
 agent                 1
-text     VOTE Agent[02]
+text     VOTE Agent[03]
 Name: 0, dtype: object
+
 day                   1
 type               vote
 idx                   0
 turn                  0
 agent                 2
-text     VOTE Agent[04]
+text     VOTE Agent[01]
 Name: 1, dtype: object
+
 day                   1
 type               vote
 idx                   0
@@ -413,332 +546,70 @@ turn                  0
 agent                 3
 text     VOTE Agent[01]
 Name: 2, dtype: object
+
 day                   1
 type               vote
 idx                   0
 turn                  0
 agent                 4
-text     VOTE Agent[02]
+text     VOTE Agent[03]
 Name: 3, dtype: object
+
 day                   1
 type               vote
 idx                   0
 turn                  0
 agent                 5
-text     VOTE Agent[03]
+text     VOTE Agent[01]
 Name: 4, dtype: object
+
 day            1
 type     execute
 idx            0
 turn           0
-agent          2
+agent          1
 text        Over
 Name: 5, dtype: object
-day                            1
-type                      divine
-idx                            0
-turn                           0
-agent                          5
-text     DIVINED Agent[03] HUMAN
-Name: 0, dtype: object
-day         2
-type     dead
-idx         0
-turn        0
-agent       4
-text     Over
-Name: 1, dtype: object
-day                             2
-type                         talk
-idx                             0
-turn                            0
-agent                           1
-text     COMINGOUT Agent[01] SEER
-Name: 0, dtype: object
-day                   2
-type               talk
-idx                   1
-turn                  0
-agent                 5
-text     VOTE Agent[03]
-Name: 1, dtype: object
-day         2
-type     talk
-idx         2
-turn        0
-agent       3
-text     Skip
-Name: 2, dtype: object
-day                   2
-type               talk
-idx                   3
-turn                  1
-agent                 5
-text     VOTE Agent[01]
-Name: 0, dtype: object
-day                             2
-type                         talk
-idx                             4
-turn                            1
-agent                           3
-text     COMINGOUT Agent[03] SEER
-Name: 1, dtype: object
-day                                                      2
-type                                                  talk
-idx                                                      5
-turn                                                     1
-agent                                                    1
-text     AND (DAY 1 (DIVINED Agent[02] WEREWOLF)) (DAY ...
-Name: 2, dtype: object
-day                   2
-type               talk
-idx                   6
-turn                  2
-agent                 5
-text     VOTE Agent[03]
-Name: 0, dtype: object
-day                                                      2
-type                                                  talk
-idx                                                      7
-turn                                                     2
-agent                                                    3
-text     AND (DAY 1 (DIVINED Agent[05] HUMAN)) (DAY 2 (...
-Name: 1, dtype: object
-day                                                      2
-type                                                  talk
-idx                                                      8
-turn                                                     2
-agent                                                    1
-text     BECAUSE (AND (COMINGOUT Agent[01] SEER) (Agent...
-Name: 2, dtype: object
-day                                                      2
-type                                                  talk
-idx                                                      9
-turn                                                     3
-agent                                                    3
-text     BECAUSE (DAY 2 (DIVINED Agent[01] WEREWOLF)) (...
-Name: 0, dtype: object
-day                                                      2
-type                                                  talk
-idx                                                     10
-turn                                                     3
-agent                                                    1
-text     BECAUSE (XOR (ESTIMATE Agent[03] WEREWOLF) (ES...
-Name: 1, dtype: object
-day                   2
-type               talk
-idx                  11
-turn                  3
-agent                 5
-text     VOTE Agent[01]
-Name: 2, dtype: object
-day                                                      2
-type                                                  talk
-idx                                                     12
-turn                                                     4
-agent                                                    3
-text     BECAUSE (DAY 2 (DIVINED Agent[01] WEREWOLF)) (...
-Name: 0, dtype: object
-day                   2
-type               talk
-idx                  13
-turn                  4
-agent                 5
-text     VOTE Agent[03]
-Name: 1, dtype: object
-day         2
-type     talk
-idx        14
-turn        4
-agent       1
-text     Skip
-Name: 2, dtype: object
-day         2
-type     talk
-idx        15
-turn        5
-agent       1
-text     Skip
-Name: 0, dtype: object
-day         2
-type     talk
-idx        16
-turn        5
-agent       3
-text     Skip
-Name: 1, dtype: object
-day                   2
-type               talk
-idx                  17
-turn                  5
-agent                 5
-text     VOTE Agent[01]
-Name: 2, dtype: object
-day         2
-type     talk
-idx        18
-turn        6
-agent       1
-text     Over
-Name: 0, dtype: object
-day         2
-type     talk
-idx        19
-turn        6
-agent       3
-text     Skip
-Name: 1, dtype: object
-day                   2
-type               talk
-idx                  20
-turn                  6
-agent                 5
-text     VOTE Agent[01]
-Name: 2, dtype: object
-day         2
-type     talk
-idx        21
-turn        7
-agent       3
-text     Over
-Name: 0, dtype: object
-day         2
-type     talk
-idx        22
-turn        7
-agent       1
-text     Over
-Name: 1, dtype: object
-day                   2
-type               talk
-idx                  23
-turn                  7
-agent                 5
-text     VOTE Agent[01]
-Name: 2, dtype: object
-day         2
-type     talk
-idx        24
-turn        8
-agent       3
-text     Over
-Name: 0, dtype: object
-day                   2
-type               talk
-idx                  25
-turn                  8
-agent                 5
-text     VOTE Agent[03]
-Name: 1, dtype: object
-day         2
-type     talk
-idx        26
-turn        8
-agent       1
-text     Over
-Name: 2, dtype: object
-day         2
-type     talk
-idx        27
-turn        9
-agent       3
-text     Over
-Name: 0, dtype: object
-day                   2
-type               talk
-idx                  28
-turn                  9
-agent                 5
-text     VOTE Agent[01]
-Name: 1, dtype: object
-day         2
-type     talk
-idx        29
-turn        9
-agent       1
-text     Over
-Name: 2, dtype: object
-day         2
-type     talk
-idx        30
-turn       10
-agent       3
-text     Over
-Name: 3, dtype: object
-day         2
-type     talk
-idx        31
-turn       10
-agent       1
-text     Over
-Name: 4, dtype: object
-day         2
-type     talk
-idx        32
-turn       10
-agent       5
-text     Over
-Name: 5, dtype: object
-day                   2
-type               vote
-idx                   0
-turn                  0
-agent                 1
-text     VOTE Agent[03]
-Name: 0, dtype: object
-day                   2
-type               vote
-idx                   0
-turn                  0
-agent                 3
-text     VOTE Agent[01]
-Name: 1, dtype: object
-day                   2
-type               vote
-idx                   0
-turn                  0
-agent                 5
-text     VOTE Agent[03]
-Name: 2, dtype: object
-day            2
-type     execute
-idx            0
-turn           0
-agent          3
-text        Over
-Name: 3, dtype: object
-day                                 3
+
+{'1': {'id': '1', 'alive': False, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '2': {'id': '2', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '3': {'id': '3', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '4': {'id': '4', 'alive': True, 'talkHistory': [], 'roleProba': None, 'role': '???', 'roleKnown': False, 'team': '???', 'teamKnown': True, 'isMe': False}, '5': {'id': '5', 'alive': True, 'talkHistory': [], 'roleProba': {'BODYGUARD': 0, 'MEDIUM': 0, 'POSSESSED': 0, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 0, 'ANY': 0, 'WEREWOLF': 0}, 'role': 'SEER', 'roleKnown': True, 'teamKnown': True, 'isMe': True}}
+
+day                                 2
 type                           finish
 idx                                 1
 turn                                0
 agent                               1
 text     COMINGOUT Agent[01] WEREWOLF
 Name: 0, dtype: object
-day                                 3
+
+day                                 2
 type                           finish
 idx                                 2
 turn                                0
 agent                               2
 text     COMINGOUT Agent[02] VILLAGER
 Name: 1, dtype: object
-day                                  3
+
+day                                  2
 type                            finish
 idx                                  3
 turn                                 0
 agent                                3
 text     COMINGOUT Agent[03] POSSESSED
 Name: 2, dtype: object
-day                                 3
+
+day                                 2
 type                           finish
 idx                                 4
 turn                                0
 agent                               4
 text     COMINGOUT Agent[04] VILLAGER
 Name: 3, dtype: object
-day                             3
+
+day                             2
 type                       finish
 idx                             5
 turn                            0
 agent                           5
 text     COMINGOUT Agent[05] SEER
 Name: 4, dtype: object
+

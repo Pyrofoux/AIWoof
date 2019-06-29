@@ -106,4 +106,4 @@ def parseArgs(args):
 
 if __name__ == '__main__':
 	parseArgs(sys.argv[1:])
-	aiwolfpy.connect_parse(SampleAgent("Random -S"))
+	aiwolfpy.connect_parse(SampleAgent("FoxuFoxu"))

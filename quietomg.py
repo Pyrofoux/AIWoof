@@ -42,10 +42,10 @@ class SampleAgent(object):
 	def update(self, base_info, diff_data, request):
 		print("Executing update...")
 		self.base_info = base_info
-		
-		printBaseInfo(base_info)
+
+		#printBaseInfo(base_info)
 		printDiffData(diff_data)
-		
+
 		self.updateGameHistory(diff_data)
 		self.updatePlayerMap(base_info)
 
@@ -55,7 +55,7 @@ class SampleAgent(object):
 		# at the start of each day, either assign a new random target
 		# or fetch a new target from the target list (agents who previously voted against us)
 		if self.current_target is None or self.player_map[self.current_target]["status"] == "DEAD":
-			
+
 			while len(self.target_list) > 0:
 				selected = self.target_list.pop(0)
 				if self.player_map[selected]["status"] != "DEAD":
@@ -71,22 +71,22 @@ class SampleAgent(object):
 
 	def talk(self):
 		print("Executing talk...")
-		
-		if self.player_map[self.current_target]["revenge"] is False: 
+
+		if self.player_map[self.current_target]["revenge"] is False:
 			print("Voting on random target")
 		else:
 			print("Voting for revenge!")
 
 		# Talking against a target has 3 steps: (0) first estimate,
-		# then (1) state your vote, then (>2) start requesting other 
+		# then (1) state your vote, then (>2) start requesting other
 		# agents to vote against the current target
-		if self.player_map[self.current_target]["targetStatus"] == 0: 	
+		if self.player_map[self.current_target]["targetStatus"] == 0:
 			talk = cb.estimate(self.current_target, "WEREWOLF")
 		elif self.player_map[self.current_target]["targetStatus"] == 1:
 			talk = cb.vote(self.current_target)
 		else:
 			talk = cb.request(cb.vote(self.current_target))
-			
+
 		self.player_map[self.current_target]["targetStatus"] += 1
 		return talk
 
@@ -119,7 +119,7 @@ class SampleAgent(object):
 			selected = randomPlayerId(self.base_info)
 			print("Attacking random agent: "+str(selected))
 		return selected
-		
+
 	def divine(self):
 		print("Executing divine randomly...")
 		return randomPlayerId(self.base_info)
@@ -127,14 +127,14 @@ class SampleAgent(object):
 	def guard(self):
 		print("Executing guard randomly...")
 		return randomPlayerId(self.base_info)
-	
+
 	def finish(self):
 		print("Executing finish...")
 
 	def updatePlayerMap(self, base_info):
 		if self.player_map == None:
 			self.player_map = {}
-		
+
 		for key, value in base_info["statusMap"].items():
 			agent_id = int(key)
 			if agent_id is not self.id:
@@ -163,16 +163,16 @@ class SampleAgent(object):
 			# we set this person as a target
 			if "{:02d}".format(self.id) in text:
 				if "ESTIMATE" in text or "VOTE" in text or ("DIVINED" in text and "WEREWOLF" in text):
-					
-					# if we are pursuing revenge against someone already  
+
+					# if we are pursuing revenge against someone already
 					# add this new agent to the target list
 					if self.player_map[self.current_target]["revenge"] == True:
 						self.target_list.append(agent)
 					# otherwise, set this new agent as the current target
 					else:
 						self.setTarget(agent, True)
-						
-	# Set some agent as the current target. Revenge param says 
+
+	# Set some agent as the current target. Revenge param says
 	# whether or not this agent acted against us before
 	def setTarget(self, id, revenge):
 		self.current_target = id
@@ -183,24 +183,24 @@ class SampleAgent(object):
 
 def parseArgs(args):
 	usage = "usage: %prog [options]"
-	parser = optparse.OptionParser(usage=usage) 
+	parser = optparse.OptionParser(usage=usage)
 
-	# need this to ensure -h (for hostname) can be used as an option 
+	# need this to ensure -h (for hostname) can be used as an option
 	# in optparse before passing the arguments to aiwolfpy
 	parser.set_conflict_handler("resolve")
 
 	parser.add_option('-h', action="store", type="string", dest="hostname",
 		help="IP address of the AIWolf server", default=None)
-	parser.add_option('-p', action="store", type="int", dest="port", 
+	parser.add_option('-p', action="store", type="int", dest="port",
 		help="Port to connect in the server", default=None)
-	parser.add_option('-r', action="store", type="string", dest="port", 
+	parser.add_option('-r', action="store", type="string", dest="port",
 		help="Role request to the server", default=-1)
-	
+
 	(opt, args) = parser.parse_args()
 	if opt.hostname == None or opt.port == -1:
 		parser.print_help()
 		sys.exit()
 
-if __name__ == '__main__':	
+if __name__ == '__main__':
 	parseArgs(sys.argv[1:])
 	aiwolfpy.connect_parse(SampleAgent("FoxuFoxu"))

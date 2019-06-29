@@ -16,13 +16,16 @@ import optparse
 import sys
 
 from toolbox import *
-from profileManager import *
+from tracker import *
 
 class SampleAgent(object):
 
 	def __init__(self, agentName):
+
 		self.myname = agentName
 		self.sleeptime = 0.1
+
+		self.tracker = Tracker()
 
 		clearLog()
 
@@ -36,8 +39,8 @@ class SampleAgent(object):
 		log(gameSetting)
 		log(baseInfo)
 
-		createProfiles(baseInfo, gameSetting)
-
+		self.tracker.createProfiles(baseInfo, gameSetting)
+		log(self.tracker.profiles)
 
 
 	def update(self, baseInfo, diffData, request):
@@ -45,9 +48,14 @@ class SampleAgent(object):
 		#print(getTimeStamp()+" inside Update")
 		#printBaseInfo(baseInfo)
 
+
+		self.tracker.update(baseInfo, diffData)
+		log(self.tracker.profiles)
+		log()
+
 		for index, row in diffData.iterrows():
 			log(row)
-
+			log()
 
 	def dayStart(self):
 
@@ -109,4 +117,4 @@ class SampleAgent(object):
 
 if __name__ == '__main__':
 	parseArgs(sys.argv[1:])
-	aiwolfpy.connect_parse(SampleAgent("Killer Q."))
+	aiwolfpy.connect_parse(SampleAgent("FoxuFoxu"))
