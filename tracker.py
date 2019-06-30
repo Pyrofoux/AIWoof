@@ -99,20 +99,24 @@ class Tracker(object):
             # if you divine the only wolf, proba -> 1 -> should be sure about the role
             # Idea : check the 1 probability on total of team at the end,
             # Update team if needed, update role if needed
-            # If one update was made, recall the probability function  
+            # If one update was made, recall the probability function
             if row.type == 'divine':
 
                 result = formatDivine(row.text)
                 self.profiles[result['id']]['team'] = result['team']
                 self.profiles[result['id']]['teamKnown'] = True
 
-            if row.type == 'talk'
-            log(row)
+                log("DIVINED "+result['id'])
 
+            if row.type == 'talk':
+                #log(row)
+                True
 
 
 
         self.updateRoleEstimations()
+        log(self.profiles, json = 1)
+        #log("")
 
 
 
@@ -139,18 +143,22 @@ class Tracker(object):
 
         #Check unknown roles
 
-        #Count alive humans and wolves
+        #Count unknown humans and wolves
 
-        alive = {}
-        alive['WEREWOLF'] = 0
-        alive['HUMAN']    = 0
+        unknown = {}
+        unknown['WEREWOLF'] = 0
+        unknown['HUMAN']    = 0
+        unknown['TOTAL']    = 0
 
         for role in roleMap:
 
             if role2team[role] == "WEREWOLF":
-                alive['WEREWOLF'] += 1
+                unknown['WEREWOLF'] += roleMap[role]
             else :
-                alive['HUMAN'] += 1
+                unknown['HUMAN'] += roleMap[role]
+
+            unknown["TOTAL"] += roleMap[role]
+
 
         #Calculate probabilities
         for id in self.profiles:
@@ -169,7 +177,7 @@ class Tracker(object):
                 for role in roleMap:
 
                     if(role2team[role] == team):
-                        roleVector[role] /= alive[team]
+                        roleVector[role] /= unknown[team]
                     else:
                         roleVector[role] = 0
 
@@ -178,6 +186,55 @@ class Tracker(object):
 
                 roleVector = dict(roleMap)
                 for role in roleMap:
-                    roleVector[role] /= self.totalAlivePlayers
+                    roleVector[role] /= unknown["TOTAL"]
 
             profile['roleProba'] = roleVector
+
+
+        self.checkRoleDeductions()
+
+
+    def checkRoleDeductions(self):
+    #Deduce team and roles based on probabilities
+        didDeductions = False
+
+        for id in self.profiles:
+
+            profile = self.profiles[id]
+
+            #Check if we can guess the team based on probabilities
+            if profile['teamKnown'] == False:
+
+                possibleTeams = []
+
+                for role in profile['roleProba']:
+
+                    if profile['roleProba'][role] > 0:
+
+                        team = role2team[role]
+                        if not (team in possibleTeams):
+                            possibleTeams.append(team)
+
+                #Deducted team
+                if len(possibleTeams) == 1:
+                    profile['team'] = possibleTeams[0]
+                    profile['teamKnown'] = True
+                    didDeductions = True
+
+            #Check if we can guess the role  based on probabilities
+            if profile['roleKnown'] == False:
+
+                for role in profile['roleProba']:
+
+                    #Deducted team
+                    if profile['roleProba'][role] == 1:
+
+                        team = role2team[role]
+                        profile['roleKnown'] = True
+                        profile['role'] = role
+                        didDeductions = True
+
+
+            #If we made deductions, recalculate probabilities
+            if didDeductions :
+                self.updateRoleEstimations()

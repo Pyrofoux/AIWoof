@@ -50,12 +50,13 @@ class SampleAgent(object):
 
 
 		self.tracker.update(baseInfo, diffData)
-		log(self.tracker.profiles)
+		#log(self.tracker.profiles, json = 1)
 		#log()
 
 		for index, row in diffData.iterrows():
 			#log(row)
-			log()
+			#log()
+			True
 
 	def dayStart(self):
 

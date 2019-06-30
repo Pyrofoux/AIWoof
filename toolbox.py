@@ -1,5 +1,5 @@
 #printing of nested dicts and pandas
-import json
+import json as JSON
 import time
 import random
 import logging
@@ -13,11 +13,11 @@ from tabulate import tabulate
 
 def printBaseInfo(base_info):
 	print("Base Info:")
-	print(json.dumps(base_info, indent=4))
+	print(JSON.dumps(base_info, indent=4))
 
 def printGameSetting(game_setting):
 	print("Game Setting:")
-	print(json.dumps(game_setting, indent=4))
+	print(JSON.dumps(game_setting, indent=4))
 
 def printDiffData(diff_data):
 	print("Diff Data:")
@@ -58,10 +58,13 @@ def clearLog():
 	if os.path.exists(logFileName):
   		os.remove(logFileName)
 
-def log(input=""):
+def log(input="", json = False):
 	f = open(logFileName,"a+")
 
-	output = str(input)
+	if json :
+		output = JSON.dumps(input, indent=4)
+	else :
+		output = str(input)
 
 	f.write(output)
 	f.write('\n')
