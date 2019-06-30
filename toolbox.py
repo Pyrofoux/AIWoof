@@ -59,7 +59,7 @@ def formatDivine(text):
 def formatAgentId(txt):
 	return str(int(''.join(c for c in txt if c in digits)))
 
-def formatAgentId(id):
+def formatAgentName(id):
 
     if len(id) < 2:
         id = "0"+id

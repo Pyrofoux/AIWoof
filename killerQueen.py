@@ -48,6 +48,9 @@ class SampleAgent(object):
 		self.tracker.update(baseInfo, diffData)
 
 	def dayStart(self):
+
+		self.tracker.nextDay()
+
 		return None
 
 	def talk(self):

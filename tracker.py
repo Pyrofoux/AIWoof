@@ -15,8 +15,8 @@ class Tracker(object):
         self.totalAlivePlayers  = 0
         self.totalWolfPlayers   = 0
 
-        self.currentDay         = -1
-        self.currentId          = -1
+        self.currentDay         = 0
+        self.myId               = 0
 
     def createProfiles(self, baseInfo, gameSetting):
         #Create profiles containing every informations about a player
@@ -129,3 +129,7 @@ class Tracker(object):
         updateRoleEstimations(self)
         updateTextMetrics(self)
         #log(self.profiles, json = 1)
+
+
+    def nextDay(self):
+        self.currentDay += 1
