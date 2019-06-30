@@ -11,6 +11,14 @@ from string import digits
 
 from tabulate import tabulate
 
+#Mapping the corresponding for a role
+role2team = {
+    "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'HUMAN', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
+}
+
+
+
+
 def printBaseInfo(base_info):
 	print("Base Info:")
 	print(JSON.dumps(base_info, indent=4))
@@ -50,6 +58,14 @@ def formatDivine(text):
 
 def formatAgentId(txt):
 	return str(int(''.join(c for c in txt if c in digits)))
+
+def formatAgentId(id):
+
+    if len(id) < 2:
+        id = "0"+id
+
+    return "Agent["+id+"]"
+
 
 
 

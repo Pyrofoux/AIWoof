@@ -45,31 +45,16 @@ class SampleAgent(object):
 
 	def update(self, baseInfo, diffData, request):
 		self.baseInfo = baseInfo
-		#print(getTimeStamp()+" inside Update")
-		#printBaseInfo(baseInfo)
-
-
 		self.tracker.update(baseInfo, diffData)
-		#log(self.tracker.profiles, json = 1)
-		#log()
-
-		for index, row in diffData.iterrows():
-			#log(row)
-			#log()
-			True
 
 	def dayStart(self):
-
-
-
-		#print(" inside dayStart")
 		return None
 
 	def talk(self):
 		#print(getTimeStamp()+" inside Talk")
-		selected = randomAliveId(self.baseInfo)
+		#selected = randomAliveId(self.baseInfo)
 		#print("Selected ID for talk: "+str(selected))
-		return cb.vote(selected)
+		return cb.skip()
 
 	def whisper(self):
 		#print(getTimeStamp()+" inside Whisper")
@@ -104,7 +89,7 @@ class SampleAgent(object):
 
 	def finish(self):
 
-
+		log(self.tracker.profiles, json = 1)
 
 		#print(getTimeStamp()+" inside Finish")
 		return None

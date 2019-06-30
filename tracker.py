@@ -1,10 +1,7 @@
 from toolbox import *
+from roleEstimations import *
+from textMetrics import *
 
-
-#Mapping the corresponding for a role
-role2team = {
-    "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'HUMAN', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
-}
 
 
 class Tracker(object):
@@ -17,6 +14,9 @@ class Tracker(object):
         self.totalHumanPlayers  = 0
         self.totalAlivePlayers  = 0
         self.totalWolfPlayers   = 0
+
+        self.currentDay         = -1
+        self.currentId          = -1
 
     def createProfiles(self, baseInfo, gameSetting):
         #Create profiles containing every informations about a player
@@ -53,10 +53,14 @@ class Tracker(object):
 
             profile['id']               = id
             profile['alive']            = True
+
             profile['talkHistory']      = []
+            profile['hostility']        = 0
+            profile['complexity']       = 0
 
             #Calculated later by updateRoleEstimations
             profile['roleProba']        = None
+
 
             if(id == myId):
 
@@ -78,7 +82,7 @@ class Tracker(object):
 
             self.profiles[id] = profile
 
-        self.updateRoleEstimations()
+        updateRoleEstimations(self)
 
     def update(self, baseInfo, diffData):
         #Updates the profiles according to recent informations
@@ -95,146 +99,33 @@ class Tracker(object):
         for index, row in diffData.iterrows():
 
             #Update divination result
-            ## TODO: Implement the consequences on probability of divination
-            # if you divine the only wolf, proba -> 1 -> should be sure about the role
-            # Idea : check the 1 probability on total of team at the end,
-            # Update team if needed, update role if needed
-            # If one update was made, recall the probability function
+            ## TODO: Implement more complex probability calculator
+            #Eg: If you divined 3 HUMAN, and there are only 3
+            # The rest is WEREWOLF
+            # + If someone is team WEREWOLF, and there's only one role -> they are that role
             if row.type == 'divine':
 
                 result = formatDivine(row.text)
                 self.profiles[result['id']]['team'] = result['team']
                 self.profiles[result['id']]['teamKnown'] = True
 
-                log("DIVINED "+result['id'])
+                #log("DIVINED "+result['id'])
 
             if row.type == 'talk':
-                #log(row)
-                True
+
+                #Don't read the Skip and Over
+                if not row.text in ["Over", "Skip"]:
+                    id = str(row.agent)
+                    talk = {}
+                    talk['day']     = row.day
+                    talk['text']    = row.text
+                    talk['turn']    = row.turn
+                    talk['id']      = row.idx
+
+                    self.profiles[id]['talkHistory'].append(talk)
 
 
 
-        self.updateRoleEstimations()
-        log(self.profiles, json = 1)
-        #log("")
-
-
-
-    def updateRoleEstimations(self):
-
-        #Copy the role map given at beginning of the game
-        roleMap = dict(self.gameCompo)
-
-        #Initialize empty probability vector
-        voidVector = dict(roleMap)
-        for role in voidVector:
-            voidVector[role] = 0
-
-        #Check the known roles and update roleMap accordingly
-        for id in self.profiles:
-
-            profile = self.profiles[id]
-            if profile['roleKnown'] :
-
-                roleMap[profile['role']] -= 1
-                roleVector = voidVector
-                roleVector[profile['role']] = 1
-                profile['roleProba'] = roleVector
-
-        #Check unknown roles
-
-        #Count unknown humans and wolves
-
-        unknown = {}
-        unknown['WEREWOLF'] = 0
-        unknown['HUMAN']    = 0
-        unknown['TOTAL']    = 0
-
-        for role in roleMap:
-
-            if role2team[role] == "WEREWOLF":
-                unknown['WEREWOLF'] += roleMap[role]
-            else :
-                unknown['HUMAN'] += roleMap[role]
-
-            unknown["TOTAL"] += roleMap[role]
-
-
-        #Calculate probabilities
-        for id in self.profiles:
-
-            profile = self.profiles[id]
-
-            #If we have info about their team
-            if profile['teamKnown'] :
-
-                if(profile['roleKnown']): #Only check unnown roles
-                    continue
-
-                team = profile['team']
-                roleVector = dict(roleMap)
-
-                for role in roleMap:
-
-                    if(role2team[role] == team):
-                        roleVector[role] /= unknown[team]
-                    else:
-                        roleVector[role] = 0
-
-            #If we don't have info about their team
-            else:
-
-                roleVector = dict(roleMap)
-                for role in roleMap:
-                    roleVector[role] /= unknown["TOTAL"]
-
-            profile['roleProba'] = roleVector
-
-
-        self.checkRoleDeductions()
-
-
-    def checkRoleDeductions(self):
-    #Deduce team and roles based on probabilities
-        didDeductions = False
-
-        for id in self.profiles:
-
-            profile = self.profiles[id]
-
-            #Check if we can guess the team based on probabilities
-            if profile['teamKnown'] == False:
-
-                possibleTeams = []
-
-                for role in profile['roleProba']:
-
-                    if profile['roleProba'][role] > 0:
-
-                        team = role2team[role]
-                        if not (team in possibleTeams):
-                            possibleTeams.append(team)
-
-                #Deducted team
-                if len(possibleTeams) == 1:
-                    profile['team'] = possibleTeams[0]
-                    profile['teamKnown'] = True
-                    didDeductions = True
-
-            #Check if we can guess the role  based on probabilities
-            if profile['roleKnown'] == False:
-
-                for role in profile['roleProba']:
-
-                    #Deducted team
-                    if profile['roleProba'][role] == 1:
-
-                        team = role2team[role]
-                        profile['roleKnown'] = True
-                        profile['role'] = role
-                        didDeductions = True
-
-
-            #If we made deductions, recalculate probabilities
-            if didDeductions :
-                self.updateRoleEstimations()
+        updateRoleEstimations(self)
+        updateTextMetrics(self)
+        #log(self.profiles, json = 1)
