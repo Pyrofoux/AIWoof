@@ -58,8 +58,7 @@ class SampleAgent(object):
 		return cb.skip()
 
 	def whisper(self):
-		selected = randomAliveId(self.baseInfo)
-		return cb.attack(selected)
+		return cb.skip()
 
 	def vote(self):
 		return heatSort(self.tracker, heatVote)
