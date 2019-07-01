@@ -1,0 +1,38 @@
+
+V.0
+
+Plays randomly, except for voting.
+Heat Vote = (roles['WEREWOLF']+roles['POSSESSED'])*(profile['hostility']*profile['complexity']+1)
+Seer only
+Silent
+Score = 0.430 - 0.540
+100 games x2
+5 agents with 4 SampleAgent from the game server
+
++Heat for Divine
+same as Vote
+Score = 0.510 - 0.550- 0.650 , on 100 games x 3
+
++Minimal Heat when trivial cases like
+  - not divining someone with known team
+  - not using powers on dead agents
+  - not voting for itself (however it may be useful in the future)
+
+Role Priority =
+if we're HUMAN (not POSSESSED)
+rolePriority = roles['WEREWOLF'] * 2 + roles['POSSESSED']
+
+if we're WEREWOLF or POSSESSED
+rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['VILLAGER']
+
+heat = rolePriority*(hostility*complexity+1)
+
+Score = 0.440 - 0,560 - 0,570 -  0.610 on 100 games x 4 with any role (SEER, POSSESSED, VILLAGER x2, WEREWOLF)
+Completely silent agent
+
+
+TODO next :
+- Declaring attacks
+- Detecting lies
+- More accurate probabilities (first calculating number of known humans, then doing conditional probabilities)
+- Not only guarding self
