@@ -11,12 +11,15 @@ from string import digits
 
 from tabulate import tabulate
 
-#Mapping the corresponding for a role
-role2team = {
+#Mapping the corresponding team for a role, when divined
+role2divined = {
     "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'HUMAN', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
 }
 
-
+#Mapping the corresponding team for a role, in absolute
+role2team = {
+    "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'WEREWOLF', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
+}
 
 
 def printBaseInfo(base_info):

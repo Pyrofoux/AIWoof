@@ -17,6 +17,7 @@ class Tracker(object):
 
         self.currentDay         = 0
         self.myId               = 0
+        self.myRole             = "ANY"
 
     def createProfiles(self, baseInfo, gameSetting):
         #Create profiles containing every informations about a player
@@ -37,7 +38,7 @@ class Tracker(object):
         for role in self.gameCompo:
 
             self.totalPlayers += self.gameCompo[role]
-            if role2team[role] == "WOLF":
+            if role2divined[role] == "WOLF":
                 self.totalWolfPlayers += 1
             else:
                 self.totalHumanPlayers += 1
@@ -65,10 +66,12 @@ class Tracker(object):
             if(id == myId):
 
                 profile['role']         = baseInfo['myRole']
-                profile['team']         = role2team[profile['role']]
+                profile['team']         = role2divined[profile['role']]
                 profile['roleKnown']    = True
                 profile['teamKnown']    = True
                 profile['isMe']         = True
+
+                tracker.myRole          = baseInfo['myRole']
 
 
             else:

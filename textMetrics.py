@@ -7,7 +7,7 @@ def updateTextMetrics(tracker):
 
         profile = tracker.profiles[id]
 
-        hostilityPatterns = generateHostilityPatterns(tracker.myId)
+        hostilityPatterns = generateHostilityPatterns(tracker)
         profile["hostility"]  = calculateHostility(profile, hostilityPatterns)
         profile["complexity"] = calculateComplexity(profile)
         #profile[""]
@@ -51,9 +51,9 @@ def calculateComplexity(profile):
     return maxComplexity
 
 
-def generateHostilityPatterns(myId):
+def generateHostilityPatterns(tracker):
 
-    myName = formatAgentName(myId)
+    myName = formatAgentName(tracker.myId)
 
     patterns = {}
 
@@ -79,9 +79,6 @@ def generateHostilityPatterns(myId):
     patterns['DIVINED '+myName+' MEDIUM'] = -15
 
     patterns['VOTE '+myName] = 20
-
-
-
 
     return patterns
 

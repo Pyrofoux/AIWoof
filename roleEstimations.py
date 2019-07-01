@@ -32,7 +32,7 @@ def updateRoleEstimations(tracker):
 
     for role in roleMap:
 
-        if role2team[role] == "WEREWOLF":
+        if role2divined[role] == "WEREWOLF":
             unknown['WEREWOLF'] += roleMap[role]
         else :
             unknown['HUMAN'] += roleMap[role]
@@ -56,7 +56,7 @@ def updateRoleEstimations(tracker):
 
             for role in roleMap:
 
-                if(role2team[role] == team):
+                if(role2divined[role] == team):
                     roleVector[role] /= unknown[team]
                 else:
                     roleVector[role] = 0
@@ -91,7 +91,7 @@ def checkRoleDeductions(tracker):
 
                 if profile['roleProba'][role] > 0:
 
-                    team = role2team[role]
+                    team = role2divined[role]
                     if not (team in possibleTeams):
                         possibleTeams.append(team)
 
@@ -109,7 +109,7 @@ def checkRoleDeductions(tracker):
                 #Deducted team
                 if profile['roleProba'][role] == 1:
 
-                    team = role2team[role]
+                    team = role2divined[role]
                     profile['roleKnown'] = True
                     profile['role'] = role
                     didDeductions = True
