@@ -1,5 +1,5 @@
 
-V.0
+v.0 02/07/19
 
 Plays randomly, except for voting.
 Heat Vote = (roles['WEREWOLF']+roles['POSSESSED'])*(profile['hostility']*profile['complexity']+1)
@@ -36,3 +36,23 @@ TODO next :
 - Detecting lies
 - More accurate probabilities (first calculating number of known humans, then doing conditional probabilities)
 - Not only guarding self
+
+03/07/19
+
+v.0 was tested on the game server during the night
+For each test set, the agent is playing games with randomized roles with the same 4 agents
+
+The scores against other agents where from most recent to oldest :
+0.488 0.483 0.485 0.440 0.535 0.442
+It looks like it's the mean for all tests since the beginning, not just the current test run
+
+v.0.1 :
+* counting the agents dead during the night as HUMANs . (WEREWOLVEs can eat themselves, but it will not be in the meta game before long)
+* setting a +1 to hostility and complexity, (for now 100 in hostility and 0 in complexity gives 0)
+* WEREWOLF  :
+            *  giving high trust in someone declaring we're HUMAN (POSSESSED)
+            *   set role to WEREWOLF when other agents are whispering
+
+added TODO :
+- POSSESSED :
+    - coming out as SEER and declaring everyone to be HUMAN to both alert the WEREWOLF and gain trust

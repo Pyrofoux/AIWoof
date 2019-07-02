@@ -106,6 +106,7 @@ class Tracker(object):
             #Eg: If you divined 3 HUMAN, and there are only 3
             # The rest is WEREWOLF
             # + If someone is team WEREWOLF, and there's only one role -> they are that role
+            #
             if row.type == 'divine':
 
                 result = formatDivine(row.text)
@@ -127,7 +128,28 @@ class Tracker(object):
 
                     self.profiles[id]['talkHistory'].append(talk)
 
+            if row.type == 'whisper':
 
+                #Wispering agents are all WEREWOLF
+                id = str(row.agent)
+                profile = self.profiles[id]
+
+                profile['role'] = 'WEREWOLF'
+                profile['roleKnown'] = True
+
+                profile['team'] = 'WEREWOLF'
+                profile['teamKnown'] = True
+
+            if row.type == 'dead':
+
+                #We consider agents dead in the night as HUMAN for now
+                id = str(row.agent)
+                profile = self.profiles[id]
+
+                if profile['teamKnown'] == False:
+
+                    profile['team'] = 'HUMAN'
+                    profile['teamKnown'] = True
 
         updateRoleEstimations(self)
         updateTextMetrics(self)

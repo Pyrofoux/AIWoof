@@ -73,7 +73,7 @@ def formatAgentName(id):
 
 
 logFileName = "../log.last"
-logMode     = "silent"
+logMode     = "print"
 
 def clearLog():
 

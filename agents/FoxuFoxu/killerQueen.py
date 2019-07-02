@@ -58,7 +58,7 @@ class SampleAgent(object):
 		return cb.skip()
 
 	def whisper(self):
-		return cb.skip()
+		return cb.attack(heatSort(self.tracker, heatAttack))
 
 	def vote(self):
 		return heatSort(self.tracker, heatVote)

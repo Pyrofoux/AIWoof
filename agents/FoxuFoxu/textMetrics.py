@@ -52,8 +52,11 @@ def calculateComplexity(profile):
 
 
 def generateHostilityPatterns(tracker):
+    #Generate patterns we identify as hostile or cooperative
 
     myName = formatAgentName(tracker.myId)
+    myRole = tracker.profiles[tracker.myId]['role']
+    myTeam = tracker.profiles[tracker.myId]['team']
 
     patterns = {}
 
@@ -78,7 +81,16 @@ def generateHostilityPatterns(tracker):
     patterns['COMINGOUT '+myName+' MEDIUM'] = -10
     patterns['DIVINED '+myName+' MEDIUM'] = -15
 
+    patterns['ESTIMATE '+myName+' BODYGUARD'] = -10
+    patterns['COMINGOUT '+myName+' BODYGUARD'] = -10
+    patterns['DIVINED '+myName+' BODYGUARD'] = -15
+
     patterns['VOTE '+myName] = 20
+
+    if myRole == "WEREWOLF": #Someone saying it divined us as HUMAN is lying to protect us
+        patterns['DIVINED '+myName+' HUMAN'] = -30
+
+
 
     return patterns
 
