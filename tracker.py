@@ -61,7 +61,7 @@ class Tracker(object):
 
             #Calculated later by updateRoleEstimations
             profile['roleProba']        = None
-
+            profile['teamProba']        = None
 
             if(id == myId):
 
