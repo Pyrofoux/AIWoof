@@ -76,11 +76,21 @@ class Tracker(object):
 
             else:
 
-                profile['role']         = '???'
-                profile['roleKnown']    = False
-                profile['team']         = '???'
-                profile['teamKnown']    = False
                 profile['isMe']         = False
+
+                if id in baseInfo['roleMap']:
+
+                    profile['role']         = baseInfo['roleMap'][id]
+                    profile['roleKnown']    = True
+                    profile['team']         = role2divined[profile['role']]
+                    profile['teamKnown']    = True
+
+                else:
+                    profile['role']         = '???'
+                    profile['roleKnown']    = False
+                    profile['team']         = '???'
+                    profile['teamKnown']    = False
+
 
 
             self.profiles[id] = profile
@@ -127,18 +137,6 @@ class Tracker(object):
                     talk['id']      = row.idx
 
                     self.profiles[id]['talkHistory'].append(talk)
-
-            if row.type == 'whisper':
-
-                #Wispering agents are all WEREWOLF
-                id = str(row.agent)
-                profile = self.profiles[id]
-
-                profile['role'] = 'WEREWOLF'
-                profile['roleKnown'] = True
-
-                profile['team'] = 'WEREWOLF'
-                profile['teamKnown'] = True
 
             if row.type == 'dead':
 

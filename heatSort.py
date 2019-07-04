@@ -31,7 +31,10 @@ def heatAttack(id, tracker, profile, roles, myProfile):
     if not profile['alive']:
         return minimumHeat
 
-    rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['VILLAGER']
+    if profile['teamKnown'] and profile['team'] == 'WEREWOLF':
+        return minimumHeat
+
+    rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER']
 
     menace = (profile['hostility']+1)*(profile['complexity']+1)
     heat = rolePriority*menace
@@ -46,13 +49,14 @@ def heatVote(id, tracker, profile, roles, myProfile):
     if not profile['alive']:
         return minimumHeat
 
+
     rolePriority = 0
 
     if role2team[myProfile['role']] == 'HUMAN':
         rolePriority = roles['WEREWOLF'] * 2 + roles['POSSESSED']
 
     else :
-        rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['VILLAGER']
+        rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER']
 
     menace = (profile['hostility']+1)*(profile['complexity']+1)
     heat = rolePriority*menace

@@ -56,3 +56,9 @@ v.0.1 :
 added TODO :
 - POSSESSED :
     - coming out as SEER and declaring everyone to be HUMAN to both alert the WEREWOLF and gain trust
+
+v.0.2 :
+* Fix : * WEREWOLF whispering correct attacks
+        * removed getting role info from whispers
+
+* Gets all roles from roleMap
