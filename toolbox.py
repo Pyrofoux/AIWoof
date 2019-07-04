@@ -1,3 +1,5 @@
+from __future__ import division
+
 #printing of nested dicts and pandas
 import json as JSON
 import time
@@ -69,11 +71,16 @@ def formatAgentName(id):
 
     return "Agent["+id+"]"
 
+def totalDict(dict):
 
+    total = 0
+    for key in dict:
+        total += dict[key]
+    return total
 
 
 logFileName = "../log.last"
-logMode     = "print"
+logMode     = "write"
 
 def clearLog():
 

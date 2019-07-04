@@ -123,9 +123,13 @@ class Tracker(object):
                 self.profiles[result['id']]['team'] = result['team']
                 self.profiles[result['id']]['teamKnown'] = True
 
-                #log("DIVINED "+result['id'])
+            elif row.type == 'identify':
 
-            if row.type == 'talk':
+                result = formatDivine(row.text)
+                self.profiles[result['id']]['team'] = result['team']
+                self.profiles[result['id']]['teamKnown'] = True
+
+            elif row.type == 'talk':
 
                 #Don't read the Skip and Over
                 if not row.text in ["Over", "Skip"]:
@@ -138,7 +142,7 @@ class Tracker(object):
 
                     self.profiles[id]['talkHistory'].append(talk)
 
-            if row.type == 'dead':
+            elif row.type == 'dead':
 
                 #We consider agents dead in the night as HUMAN for now
                 id = str(row.agent)
