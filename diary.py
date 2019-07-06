@@ -14,18 +14,18 @@ class Diary(object):
     def nextDay(self):
         self.today += 1
 
-    def addNote(self, day, label, value):
+    def writeNote(self, day, label, value):
         #Creates a note for given day, with specific label
         day = int(day)
 
-        if day in self.notes:
-            self.notes[day] = []
+        if not (day in self.notes):
+            self.notes[day] = {}
 
         self.notes[day][label] = value
 
     def todayNote(self, label, value):
         #Creates note at current day
-        self.addNote(self.today, label, value)
+        self.writeNote(self.today, label, value)
 
 
     def readAllNotes(self, specificLabel=False, specificDay=False):
