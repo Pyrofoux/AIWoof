@@ -80,6 +80,8 @@ class Tracker(object):
 
                 if id in baseInfo['roleMap']:
 
+                    log(id+" is in roleMap !")
+
                     profile['role']         = baseInfo['roleMap'][id]
                     profile['roleKnown']    = True
                     profile['team']         = role2divined[profile['role']]
@@ -160,3 +162,13 @@ class Tracker(object):
 
     def nextDay(self):
         self.currentDay += 1
+
+
+    def printProfiles(self):
+
+        for id in self.profiles:
+
+            profile = dict(self.profiles[id])
+            del profile['talkHistory']
+
+            log(profile, json = True)

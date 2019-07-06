@@ -76,8 +76,8 @@ class SampleAgent(object):
 
 	def finish(self):
 
-		log(self.tracker.profiles, json = 1)
-
+		#log(self.tracker.profiles, json = 1)
+		self.tracker.printProfiles()
 		#print(getTimeStamp()+" inside Finish")
 		return None
 

@@ -25,22 +25,29 @@ def updateRoleEstimations(tracker):
             role = profile['role']
             team = role2divined[role]
 
+            #1 for the role, 0 for the other
             roleVector = dict(voidRoleVector)
             roleVector[role] = 1
             profile['roleProba'] = roleVector
 
+            #1 for the team, 0 for the other
             teamVector = dict(voidTeamVector)
             teamVector[team] = 1
             profile['teamProba'] = teamVector
 
+            #remove role and team from the list of unknown attributions
             roleMap[role] -= 1
             teamMap[team] -= 1
+
+
+    log("teamMap 1")
+    log(teamMap)
 
     #Calculate probabilities when role is known
     #+ remove known roles from current team map
 
 
-    fixedTeamMap      = dict(teamMap)
+    #fixedTeamMap      = dict(teamMap)
 
     for id in tracker.profiles:
 
@@ -50,23 +57,27 @@ def updateRoleEstimations(tracker):
 
             team = profile['team']
 
-            #Calculating the probabilities of each role
-            roleVector = filterTeam(roleMap, team)
+            #Counting the reamining roles for the known team
+            roleVector   = filterTeam(roleMap, team)
+            totalTeam    =  totalDict(roleVector)
 
-            for role, number in roleVector.iteritems():
-
+            for role in roleVector:
+                number = roleVector[role]
 
                 #Avoid dividing by zero
-                if number == 0 or fixedTeamMap[role2divined[role]] == 0:
+                if number == 0 or totalTeam == 0:
                     roleVector[role] = 0
                 else:
-                    roleVector[role] = number / fixedTeamMap[role2divined[role]]
+                #Probability of being this role, knowing we're in the current team
+                    roleVector[role] = number / totalTeam
+
             profile['roleProba'] = roleVector
 
             teamVector = dict(voidTeamVector)
             teamVector[team] = 1
             profile['teamProba'] = teamVector
 
+            #Remove team member from the list of unknown team attributions
             teamMap[team] -= 1
 
     #Calculate probabilities when role is unknown
@@ -77,17 +88,18 @@ def updateRoleEstimations(tracker):
         if not profile['roleKnown'] and not profile['teamKnown']:
 
             teamVector = {'HUMAN': 0,'WEREWOLF': 0}
-            total = totalDict(teamMap)
+            totalTeam = totalDict(teamMap)
 
-            if total > 0:
-                teamVector['WEREWOLF'] = teamMap['WEREWOLF']/total
-                teamVector['HUMAN'] = teamMap['HUMAN']/total
+            if totalTeam > 0:
+                teamVector['WEREWOLF'] = teamMap['WEREWOLF']/totalTeam
+                teamVector['HUMAN'] = teamMap['HUMAN']/totalTeam
 
             conditionalRoleVector = {}
             conditionalRoleVector['HUMAN']      = filterTeam(roleMap, 'HUMAN')
             conditionalRoleVector['WEREWOLF']   = filterTeam(roleMap, 'WEREWOLF')
 
             totalRoleMap = totalDict(roleMap)
+
             for team in conditionalRoleVector:
                 for role in conditionalRoleVector[team]:
                     conditionalRoleVector[team][role] /= totalRoleMap
@@ -112,7 +124,7 @@ def countTeam(roleMap):
     for role in roleMap:
         team = role2divined[role]
         if team in teamMap:
-            teamMap[team] += 1
+            teamMap[team] += roleMap[role]
 
     return teamMap
 

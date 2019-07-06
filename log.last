@@ -1,1926 +1,1028 @@
-{u'maxRevote': 1, u'randomSeed': 1211326352469931341, u'validateUtterance': True, u'enableNoExecution': False, u'roleNumMap': {u'BODYGUARD': 1, u'MEDIUM': 1, u'SEER': 1, u'WEREWOLF': 3, u'POSSESSED': 1, u'FOX': 0, u'FREEMASON': 0, u'VILLAGER': 7, u'ANY': 0}, u'enableRoleRequest': True, u'votableInFirstDay': False, u'maxSkip': 2, u'timeLimit': 1000, u'maxWhisper': 10, u'maxWhisperTurn': 20, u'whisperBeforeRevote': False, u'maxTalkTurn': 20, u'playerNum': 14, u'voteVisible': True, u'maxAttackRevote': 1, u'talkOnFirstDay': False, u'enableNoAttack': False, u'maxTalk': 10}
-{'agentIdx': 14, 'statusMap': {u'11': u'ALIVE', u'10': u'ALIVE', u'13': u'ALIVE', u'12': u'ALIVE', u'14': u'ALIVE', u'1': u'ALIVE', u'3': u'ALIVE', u'2': u'ALIVE', u'5': u'ALIVE', u'4': u'ALIVE', u'7': u'ALIVE', u'6': u'ALIVE', u'9': u'ALIVE', u'8': u'ALIVE'}, 'remainTalkMap': {u'11': 10, u'10': 10, u'13': 10, u'12': 10, u'14': 10, u'1': 10, u'3': 10, u'2': 10, u'5': 10, u'4': 10, u'7': 10, u'6': 10, u'9': 10, u'8': 10}, 'remainWhisperMap': {}, 'roleMap': {u'14': u'MEDIUM'}, 'myRole': u'MEDIUM', 'day': 0}
-deduced 11 is WEREWOLF
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': 3822262160846903087, 'roleNumMap': {'FREEMASON': 0, 'POSSESSED': 1, 'SEER': 1, 'VILLAGER': 8, 'ANY': 0, 'MEDIUM': 1, 'WEREWOLF': 3, 'BODYGUARD': 1, 'FOX': 0}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'WEREWOLF', 'roleMap': {'15': 'WEREWOLF', '4': 'WEREWOLF', '12': 'WEREWOLF'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {'4': 10, '12': 10, '15': 10}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+4 is in roleMap !
+12 is in roleMap !
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 1 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 2 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 3 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 5 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 6 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 7 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 8 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 9 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 10 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 11 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 13 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+deduced 14 is HUMAN
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
+teamMap 1
+{'HUMAN': 12, 'WEREWOLF': 0}
 {
-    "11": {
-        "teamKnown": true, 
-        "roleKnown": false, 
-        "hostility": 0, 
-        "teamProba": {
-            "HUMAN": 0, 
-            "WEREWOLF": 1
-        }, 
-        "alive": true, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0, 
-            "MEDIUM": 0, 
-            "SEER": 0, 
-            "WEREWOLF": 3.0, 
-            "POSSESSED": 0, 
-            "FOX": 0, 
-            "FREEMASON": 0, 
-            "VILLAGER": 0, 
-            "ANY": 0
-        }, 
-        "role": "???", 
-        "team": "WEREWOLF", 
-        "talkHistory": [
-            {
-                "id": 7, 
-                "text": "COMINGOUT Agent[11] MEDIUM", 
-                "day": 1, 
-                "turn": 0
-            }, 
-            {
-                "id": 32, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 7, 
-                "text": "DAY 2 (IDENTIFIED Agent[13] WEREWOLF)", 
-                "day": 2, 
-                "turn": 0
-            }, 
-            {
-                "id": 27, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 2, 
-                "text": "DAY 3 (IDENTIFIED Agent[10] HUMAN)", 
-                "day": 3, 
-                "turn": 0
-            }, 
-            {
-                "id": 21, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 5, 
-                "text": "DAY 4 (IDENTIFIED Agent[08] WEREWOLF)", 
-                "day": 4, 
-                "turn": 0
-            }, 
-            {
-                "id": 21, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 2
-            }
-        ], 
-        "id": "11", 
-        "isMe": false
-    }, 
-    "10": {
-        "teamKnown": true, 
-        "roleKnown": false, 
-        "hostility": 0, 
-        "teamProba": {
-            "HUMAN": 1, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.25, 
-            "MEDIUM": 0, 
-            "SEER": 0.25, 
-            "WEREWOLF": 0, 
-            "POSSESSED": 0.25, 
-            "FOX": 0, 
-            "FREEMASON": 0, 
-            "VILLAGER": 1.75, 
-            "ANY": 0
-        }, 
-        "role": "???", 
-        "team": "HUMAN", 
-        "talkHistory": [
-            {
-                "id": 41, 
-                "text": "AND (VOTE Agent[11]) (REQUEST ANY (VOTE Agent[11]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 50, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 68, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 81, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 90, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 6
-            }, 
-            {
-                "id": 107, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 7
-            }, 
-            {
-                "id": 112, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 8
-            }, 
-            {
-                "id": 144, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 10
-            }, 
-            {
-                "id": 176, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 12
-            }, 
-            {
-                "id": 197, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 14
-            }, 
-            {
-                "id": 25, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 42, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 3
-            }, 
-            {
-                "id": 50, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 4
-            }, 
-            {
-                "id": 67, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 5
-            }, 
-            {
-                "id": 77, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 6
-            }, 
-            {
-                "id": 94, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 7
-            }, 
-            {
-                "id": 107, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 8
-            }, 
-            {
-                "id": 115, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 9
-            }, 
-            {
-                "id": 139, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 11
-            }, 
-            {
-                "id": 162, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 13
-            }
-        ], 
-        "id": "10", 
-        "isMe": false
-    }, 
-    "13": {
-        "teamKnown": true, 
-        "roleKnown": false, 
-        "hostility": 0, 
-        "teamProba": {
-            "HUMAN": 1, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 6, 
-        "roleProba": {
-            "BODYGUARD": 0.25, 
-            "MEDIUM": 0, 
-            "SEER": 0.25, 
-            "WEREWOLF": 0, 
-            "POSSESSED": 0.25, 
-            "FOX": 0, 
-            "FREEMASON": 0, 
-            "VILLAGER": 1.75, 
-            "ANY": 0
-        }, 
-        "role": "???", 
-        "team": "HUMAN", 
-        "talkHistory": [
-            {
-                "id": 6, 
-                "text": "COMINGOUT Agent[13] SEER", 
-                "day": 1, 
-                "turn": 0
-            }, 
-            {
-                "id": 15, 
-                "text": "DAY 1 (DIVINED Agent[06] WEREWOLF)", 
-                "day": 1, 
-                "turn": 1
-            }, 
-            {
-                "id": 34, 
-                "text": "BECAUSE (DAY 1 (DIVINED Agent[06] WEREWOLF)) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 52, 
-                "text": "BECAUSE (DAY 1 (DIVINED Agent[06] WEREWOLF)) (AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06])))", 
-                "day": 1, 
-                "turn": 3
-            }
-        ], 
-        "id": "13", 
-        "isMe": false
-    }, 
-    "12": {
-        "teamKnown": true, 
-        "roleKnown": false, 
-        "hostility": 0, 
-        "teamProba": {
-            "HUMAN": 1, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.25, 
-            "MEDIUM": 0, 
-            "SEER": 0.25, 
-            "WEREWOLF": 0, 
-            "POSSESSED": 0.25, 
-            "FOX": 0, 
-            "FREEMASON": 0, 
-            "VILLAGER": 1.75, 
-            "ANY": 0
-        }, 
-        "role": "???", 
-        "team": "HUMAN", 
-        "talkHistory": [
-            {
-                "id": 36, 
-                "text": "AND (VOTE Agent[11]) (REQUEST ANY (VOTE Agent[11]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 62, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 76, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 97, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 6
-            }, 
-            {
-                "id": 102, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 7
-            }, 
-            {
-                "id": 152, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 10
-            }, 
-            {
-                "id": 155, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 11
-            }, 
-            {
-                "id": 179, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 12
-            }, 
-            {
-                "id": 184, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 13
-            }, 
-            {
-                "id": 205, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 14
-            }
-        ], 
-        "id": "12", 
-        "isMe": false
-    }, 
-    "14": {
-        "teamKnown": true, 
-        "roleKnown": true, 
-        "hostility": -100, 
-        "teamProba": {
-            "HUMAN": 1, 
-            "WEREWOLF": 0
-        }, 
-        "alive": true, 
-        "complexity": 0, 
-        "roleProba": {
-            "BODYGUARD": 0, 
-            "MEDIUM": 1, 
-            "SEER": 0, 
-            "WEREWOLF": 0, 
-            "POSSESSED": 0, 
-            "FOX": 0, 
-            "ANY": 0, 
-            "VILLAGER": 0, 
-            "FREEMASON": 0
-        }, 
-        "role": "MEDIUM", 
-        "team": "HUMAN", 
-        "talkHistory": [], 
-        "id": "14", 
-        "isMe": true
-    }, 
-    "1": {
-        "teamKnown": false, 
-        "roleKnown": false, 
-        "hostility": 600, 
-        "teamProba": {
-            "HUMAN": 0, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.0, 
-            "MEDIUM": 0.0, 
-            "SEER": 0.0, 
-            "WEREWOLF": 0.0, 
-            "POSSESSED": 0.0, 
-            "FOX": 0.0, 
-            "ANY": 0.0, 
-            "VILLAGER": 0.0, 
-            "FREEMASON": 0.0
-        }, 
-        "role": "???", 
-        "team": "???", 
-        "talkHistory": [
-            {
-                "id": 37, 
-                "text": "AND (VOTE Agent[11]) (REQUEST ANY (VOTE Agent[11]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 45, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 59, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 70, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 111, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 7
-            }, 
-            {
-                "id": 121, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 8
-            }, 
-            {
-                "id": 139, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 9
-            }, 
-            {
-                "id": 140, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 10
-            }, 
-            {
-                "id": 193, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 13
-            }, 
-            {
-                "id": 207, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 14
-            }, 
-            {
-                "id": 35, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 40, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 3
-            }, 
-            {
-                "id": 54, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 4
-            }, 
-            {
-                "id": 70, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 2, 
-                "turn": 5
-            }, 
-            {
-                "id": 81, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 6
-            }, 
-            {
-                "id": 88, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 7
-            }, 
-            {
-                "id": 106, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 8
-            }, 
-            {
-                "id": 111, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 9
-            }, 
-            {
-                "id": 177, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 14
-            }, 
-            {
-                "id": 196, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 16
-            }, 
-            {
-                "id": 28, 
-                "text": "AND (VOTE Agent[07]) (REQUEST ANY (VOTE Agent[07]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 34, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 3, 
-                "turn": 3
-            }, 
-            {
-                "id": 45, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 4
-            }, 
-            {
-                "id": 71, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 7
-            }, 
-            {
-                "id": 80, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 8
-            }, 
-            {
-                "id": 106, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 10
-            }, 
-            {
-                "id": 132, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 13
-            }, 
-            {
-                "id": 140, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 14
-            }, 
-            {
-                "id": 156, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 3, 
-                "turn": 15
-            }, 
-            {
-                "id": 165, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 16
-            }, 
-            {
-                "id": 18, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 4, 
-                "turn": 2
-            }, 
-            {
-                "id": 39, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 4
-            }, 
-            {
-                "id": 43, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 5
-            }, 
-            {
-                "id": 54, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 6
-            }, 
-            {
-                "id": 70, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 8
-            }, 
-            {
-                "id": 83, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 4, 
-                "turn": 10
-            }, 
-            {
-                "id": 89, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 11
-            }, 
-            {
-                "id": 108, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 13
-            }, 
-            {
-                "id": 114, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 14
-            }, 
-            {
-                "id": 135, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 4, 
-                "turn": 16
-            }
-        ], 
-        "id": "1", 
-        "isMe": false
-    }, 
-    "3": {
-        "teamKnown": false, 
-        "roleKnown": false, 
-        "hostility": 600, 
-        "teamProba": {
-            "HUMAN": 0, 
-            "WEREWOLF": 0
-        }, 
-        "alive": true, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.0, 
-            "MEDIUM": 0.0, 
-            "SEER": 0.0, 
-            "WEREWOLF": 0.0, 
-            "POSSESSED": 0.0, 
-            "FOX": 0.0, 
-            "ANY": 0.0, 
-            "VILLAGER": 0.0, 
-            "FREEMASON": 0.0
-        }, 
-        "role": "???", 
-        "team": "???", 
-        "talkHistory": [
-            {
-                "id": 29, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 42, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 60, 
-                "text": "AND (VOTE Agent[11]) (REQUEST ANY (VOTE Agent[11]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 78, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 86, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 6
-            }, 
-            {
-                "id": 105, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 7
-            }, 
-            {
-                "id": 135, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 9
-            }, 
-            {
-                "id": 146, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 10
-            }, 
-            {
-                "id": 159, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 11
-            }, 
-            {
-                "id": 173, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 12
-            }, 
-            {
-                "id": 30, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 41, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 2, 
-                "turn": 3
-            }, 
-            {
-                "id": 49, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 4
-            }, 
-            {
-                "id": 159, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 13
-            }, 
-            {
-                "id": 176, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 14
-            }, 
-            {
-                "id": 211, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 17
-            }, 
-            {
-                "id": 227, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 18
-            }, 
-            {
-                "id": 25, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 39, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 3
-            }, 
-            {
-                "id": 84, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 8
-            }, 
-            {
-                "id": 90, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 9
-            }, 
-            {
-                "id": 100, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 10
-            }, 
-            {
-                "id": 128, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 12
-            }, 
-            {
-                "id": 138, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 13
-            }, 
-            {
-                "id": 141, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 14
-            }, 
-            {
-                "id": 157, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 15
-            }, 
-            {
-                "id": 187, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 18
-            }, 
-            {
-                "id": 20, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 4, 
-                "turn": 2
-            }, 
-            {
-                "id": 31, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 3
-            }, 
-            {
-                "id": 47, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 5
-            }, 
-            {
-                "id": 51, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 6
-            }, 
-            {
-                "id": 72, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 9
-            }, 
-            {
-                "id": 86, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 10
-            }, 
-            {
-                "id": 101, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 12
-            }, 
-            {
-                "id": 109, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 13
-            }, 
-            {
-                "id": 124, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 4, 
-                "turn": 15
-            }, 
-            {
-                "id": 130, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 16
-            }
-        ], 
-        "id": "3", 
-        "isMe": false
-    }, 
-    "2": {
-        "teamKnown": true, 
-        "roleKnown": false, 
-        "hostility": 40, 
-        "teamProba": {
-            "HUMAN": 1, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.25, 
-            "MEDIUM": 0, 
-            "SEER": 0.25, 
-            "WEREWOLF": 0, 
-            "POSSESSED": 0.25, 
-            "FOX": 0, 
-            "FREEMASON": 0, 
-            "VILLAGER": 1.75, 
-            "ANY": 0
-        }, 
-        "role": "???", 
-        "team": "HUMAN", 
-        "talkHistory": [
-            {
-                "id": 35, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 51, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 65, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 71, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 125, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 8
-            }, 
-            {
-                "id": 132, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 9
-            }, 
-            {
-                "id": 142, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 10
-            }, 
-            {
-                "id": 162, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 11
-            }, 
-            {
-                "id": 170, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 12
-            }, 
-            {
-                "id": 186, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 13
-            }, 
-            {
-                "id": 34, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 46, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 2, 
-                "turn": 3
-            }, 
-            {
-                "id": 53, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 4
-            }, 
-            {
-                "id": 63, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 5
-            }, 
-            {
-                "id": 75, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 6
-            }, 
-            {
-                "id": 84, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 7
-            }, 
-            {
-                "id": 97, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 8
-            }, 
-            {
-                "id": 144, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 12
-            }, 
-            {
-                "id": 172, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 14
-            }, 
-            {
-                "id": 182, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 15
-            }
-        ], 
-        "id": "2", 
-        "isMe": false
-    }, 
-    "5": {
-        "teamKnown": false, 
-        "roleKnown": false, 
-        "hostility": -30, 
-        "teamProba": {
-            "HUMAN": 0, 
-            "WEREWOLF": 0
-        }, 
-        "alive": true, 
-        "complexity": 6, 
-        "roleProba": {
-            "BODYGUARD": 0.0, 
-            "MEDIUM": 0.0, 
-            "SEER": 0.0, 
-            "WEREWOLF": 0.0, 
-            "POSSESSED": 0.0, 
-            "FOX": 0.0, 
-            "ANY": 0.0, 
-            "VILLAGER": 0.0, 
-            "FREEMASON": 0.0
-        }, 
-        "role": "???", 
-        "team": "???", 
-        "talkHistory": [
-            {
-                "id": 22, 
-                "text": "COMINGOUT Agent[05] SEER", 
-                "day": 1, 
-                "turn": 1
-            }, 
-            {
-                "id": 30, 
-                "text": "DAY 1 (DIVINED Agent[13] WEREWOLF)", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 54, 
-                "text": "BECAUSE (DAY 1 (DIVINED Agent[13] WEREWOLF)) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 63, 
-                "text": "BECAUSE (DAY 1 (DIVINED Agent[13] WEREWOLF)) (AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13])))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 1, 
-                "text": "DAY 2 (DIVINED Agent[14] HUMAN)", 
-                "day": 2, 
-                "turn": 0
-            }, 
-            {
-                "id": 29, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 8, 
-                "text": "DAY 3 (DIVINED Agent[11] HUMAN)", 
-                "day": 3, 
-                "turn": 0
-            }, 
-            {
-                "id": 27, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 7, 
-                "text": "DAY 4 (DIVINED Agent[07] HUMAN)", 
-                "day": 4, 
-                "turn": 0
-            }, 
-            {
-                "id": 23, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 4, 
-                "turn": 2
-            }
-        ], 
-        "id": "5", 
-        "isMe": false
-    }, 
-    "4": {
-        "teamKnown": true, 
-        "roleKnown": false, 
-        "hostility": 0, 
-        "teamProba": {
-            "HUMAN": 1, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.25, 
-            "MEDIUM": 0, 
-            "SEER": 0.25, 
-            "WEREWOLF": 0, 
-            "POSSESSED": 0.25, 
-            "FOX": 0, 
-            "FREEMASON": 0, 
-            "VILLAGER": 1.75, 
-            "ANY": 0
-        }, 
-        "role": "???", 
-        "team": "HUMAN", 
-        "talkHistory": [
-            {
-                "id": 38, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 49, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 69, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 73, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 91, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 6
-            }, 
-            {
-                "id": 122, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 8
-            }, 
-            {
-                "id": 131, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 9
-            }, 
-            {
-                "id": 166, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 11
-            }, 
-            {
-                "id": 168, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 12
-            }, 
-            {
-                "id": 194, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 13
-            }, 
-            {
-                "id": 31, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 39, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 3
-            }, 
-            {
-                "id": 48, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 2, 
-                "turn": 4
-            }, 
-            {
-                "id": 71, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 5
-            }, 
-            {
-                "id": 83, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 6
-            }, 
-            {
-                "id": 104, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 8
-            }, 
-            {
-                "id": 109, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 9
-            }, 
-            {
-                "id": 130, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 10
-            }, 
-            {
-                "id": 161, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 13
-            }, 
-            {
-                "id": 175, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 14
-            }, 
-            {
-                "id": 23, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 33, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 3
-            }, 
-            {
-                "id": 40, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 4
-            }, 
-            {
-                "id": 86, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 8
-            }, 
-            {
-                "id": 104, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 10
-            }, 
-            {
-                "id": 118, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 11
-            }, 
-            {
-                "id": 151, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 15
-            }, 
-            {
-                "id": 162, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 16
-            }, 
-            {
-                "id": 177, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 3, 
-                "turn": 17
-            }, 
-            {
-                "id": 198, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 19
-            }
-        ], 
-        "id": "4", 
-        "isMe": false
-    }, 
-    "7": {
-        "teamKnown": false, 
-        "roleKnown": false, 
-        "hostility": 800, 
-        "teamProba": {
-            "HUMAN": 0, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.0, 
-            "MEDIUM": 0.0, 
-            "SEER": 0.0, 
-            "WEREWOLF": 0.0, 
-            "POSSESSED": 0.0, 
-            "FOX": 0.0, 
-            "ANY": 0.0, 
-            "VILLAGER": 0.0, 
-            "FREEMASON": 0.0
-        }, 
-        "role": "???", 
-        "team": "???", 
-        "talkHistory": [
-            {
-                "id": 40, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 55, 
-                "text": "AND (VOTE Agent[11]) (REQUEST ANY (VOTE Agent[11]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 58, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 80, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 84, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 6
-            }, 
-            {
-                "id": 160, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 11
-            }, 
-            {
-                "id": 169, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 12
-            }, 
-            {
-                "id": 187, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 13
-            }, 
-            {
-                "id": 202, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 14
-            }, 
-            {
-                "id": 222, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 15
-            }, 
-            {
-                "id": 32, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 38, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 3
-            }, 
-            {
-                "id": 61, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 5
-            }, 
-            {
-                "id": 72, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 6
-            }, 
-            {
-                "id": 165, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 13
-            }, 
-            {
-                "id": 179, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 14
-            }, 
-            {
-                "id": 186, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 15
-            }, 
-            {
-                "id": 202, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 16
-            }, 
-            {
-                "id": 213, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 17
-            }, 
-            {
-                "id": 29, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 38, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 3
-            }, 
-            {
-                "id": 46, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 3, 
-                "turn": 4
-            }, 
-            {
-                "id": 53, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 5
-            }, 
-            {
-                "id": 73, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 7
-            }, 
-            {
-                "id": 94, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 9
-            }, 
-            {
-                "id": 101, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 10
-            }, 
-            {
-                "id": 115, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 11
-            }, 
-            {
-                "id": 182, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 3, 
-                "turn": 18
-            }, 
-            {
-                "id": 199, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 19
-            }, 
-            {
-                "id": 16, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 4, 
-                "turn": 2
-            }, 
-            {
-                "id": 37, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 4
-            }, 
-            {
-                "id": 46, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 5
-            }, 
-            {
-                "id": 49, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 6
-            }, 
-            {
-                "id": 63, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 7
-            }, 
-            {
-                "id": 75, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 9
-            }, 
-            {
-                "id": 80, 
-                "text": "AND (VOTE Agent[01]) (REQUEST ANY (VOTE Agent[01]))", 
-                "day": 4, 
-                "turn": 10
-            }, 
-            {
-                "id": 97, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 12
-            }, 
-            {
-                "id": 105, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 13
-            }, 
-            {
-                "id": 125, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 15
-            }
-        ], 
-        "id": "7", 
-        "isMe": false
-    }, 
-    "6": {
-        "teamKnown": false, 
-        "roleKnown": false, 
-        "hostility": 160, 
-        "teamProba": {
-            "HUMAN": 0, 
-            "WEREWOLF": 0
-        }, 
-        "alive": true, 
-        "complexity": 7, 
-        "roleProba": {
-            "BODYGUARD": 0.0, 
-            "MEDIUM": 0.0, 
-            "SEER": 0.0, 
-            "WEREWOLF": 0.0, 
-            "POSSESSED": 0.0, 
-            "FOX": 0.0, 
-            "ANY": 0.0, 
-            "VILLAGER": 0.0, 
-            "FREEMASON": 0.0
-        }, 
-        "role": "???", 
-        "team": "???", 
-        "talkHistory": [
-            {
-                "id": 39, 
-                "text": "BECAUSE (AND (COMINGOUT Agent[06] VILLAGER) (DAY 1 (Agent[13] DIVINED Agent[06] WEREWOLF))) (XOR (ESTIMATE Agent[13] WEREWOLF) (ESTIMATE Agent[13] POSSESSED))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 48, 
-                "text": "BECAUSE (XOR (ESTIMATE Agent[13] WEREWOLF) (ESTIMATE Agent[13] POSSESSED)) (AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13])))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 24, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 20, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 22, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 4, 
-                "turn": 2
-            }
-        ], 
-        "id": "6", 
-        "isMe": false
-    }, 
-    "9": {
-        "teamKnown": false, 
-        "roleKnown": false, 
-        "hostility": 0, 
-        "teamProba": {
-            "HUMAN": 0, 
-            "WEREWOLF": 0
-        }, 
-        "alive": true, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.0, 
-            "MEDIUM": 0.0, 
-            "SEER": 0.0, 
-            "WEREWOLF": 0.0, 
-            "POSSESSED": 0.0, 
-            "FOX": 0.0, 
-            "ANY": 0.0, 
-            "VILLAGER": 0.0, 
-            "FREEMASON": 0.0
-        }, 
-        "role": "???", 
-        "team": "???", 
-        "talkHistory": [
-            {
-                "id": 31, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 33, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 24, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 19, 
-                "text": "AND (VOTE Agent[03]) (REQUEST ANY (VOTE Agent[03]))", 
-                "day": 4, 
-                "turn": 2
-            }
-        ], 
-        "id": "9", 
-        "isMe": false
-    }, 
-    "8": {
-        "teamKnown": true, 
-        "roleKnown": false, 
-        "hostility": 120, 
-        "teamProba": {
-            "HUMAN": 1, 
-            "WEREWOLF": 0
-        }, 
-        "alive": false, 
-        "complexity": 3, 
-        "roleProba": {
-            "BODYGUARD": 0.25, 
-            "MEDIUM": 0, 
-            "SEER": 0.25, 
-            "WEREWOLF": 0, 
-            "POSSESSED": 0.25, 
-            "FOX": 0, 
-            "FREEMASON": 0, 
-            "VILLAGER": 1.75, 
-            "ANY": 0
-        }, 
-        "role": "???", 
-        "team": "HUMAN", 
-        "talkHistory": [
-            {
-                "id": 33, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 2
-            }, 
-            {
-                "id": 44, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 3
-            }, 
-            {
-                "id": 64, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 4
-            }, 
-            {
-                "id": 83, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 5
-            }, 
-            {
-                "id": 85, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 6
-            }, 
-            {
-                "id": 99, 
-                "text": "AND (VOTE Agent[13]) (REQUEST ANY (VOTE Agent[13]))", 
-                "day": 1, 
-                "turn": 7
-            }, 
-            {
-                "id": 138, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 9
-            }, 
-            {
-                "id": 150, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 1, 
-                "turn": 10
-            }, 
-            {
-                "id": 154, 
-                "text": "AND (VOTE Agent[06]) (REQUEST ANY (VOTE Agent[06]))", 
-                "day": 1, 
-                "turn": 11
-            }, 
-            {
-                "id": 177, 
-                "text": "AND (VOTE Agent[02]) (REQUEST ANY (VOTE Agent[02]))", 
-                "day": 1, 
-                "turn": 12
-            }, 
-            {
-                "id": 26, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 2
-            }, 
-            {
-                "id": 36, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 2, 
-                "turn": 3
-            }, 
-            {
-                "id": 59, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 4
-            }, 
-            {
-                "id": 92, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 7
-            }, 
-            {
-                "id": 105, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 8
-            }, 
-            {
-                "id": 166, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 13
-            }, 
-            {
-                "id": 174, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 14
-            }, 
-            {
-                "id": 183, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 2, 
-                "turn": 15
-            }, 
-            {
-                "id": 197, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 2, 
-                "turn": 16
-            }, 
-            {
-                "id": 210, 
-                "text": "AND (VOTE Agent[10]) (REQUEST ANY (VOTE Agent[10]))", 
-                "day": 2, 
-                "turn": 17
-            }, 
-            {
-                "id": 26, 
-                "text": "AND (VOTE Agent[14]) (REQUEST ANY (VOTE Agent[14]))", 
-                "day": 3, 
-                "turn": 2
-            }, 
-            {
-                "id": 30, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 3
-            }, 
-            {
-                "id": 66, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 6
-            }, 
-            {
-                "id": 95, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 9
-            }, 
-            {
-                "id": 108, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 10
-            }, 
-            {
-                "id": 110, 
-                "text": "AND (VOTE Agent[09]) (REQUEST ANY (VOTE Agent[09]))", 
-                "day": 3, 
-                "turn": 11
-            }, 
-            {
-                "id": 125, 
-                "text": "AND (VOTE Agent[08]) (REQUEST ANY (VOTE Agent[08]))", 
-                "day": 3, 
-                "turn": 12
-            }, 
-            {
-                "id": 192, 
-                "text": "AND (VOTE Agent[04]) (REQUEST ANY (VOTE Agent[04]))", 
-                "day": 3, 
-                "turn": 19
-            }
-        ], 
-        "id": "8", 
-        "isMe": false
-    }
+    "id": "1",
+    "alive": false,
+    "hostility": 160,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 80,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "3",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": -60,
+    "complexity": 7,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0,
+        "SEER": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "MEDIUM": 0,
+        "WEREWOLF": 1,
+        "BODYGUARD": 0,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 0,
+        "WEREWOLF": 1
+    },
+    "isMe": false,
+    "role": "WEREWOLF",
+    "roleKnown": true,
+    "team": "WEREWOLF",
+    "teamKnown": true
+}
+{
+    "id": "5",
+    "alive": true,
+    "hostility": 120,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 105,
+    "complexity": 6,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 320,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "10",
+    "alive": false,
+    "hostility": 160,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "11",
+    "alive": false,
+    "hostility": 280,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "12",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0,
+        "SEER": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "MEDIUM": 0,
+        "WEREWOLF": 1,
+        "BODYGUARD": 0,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 0,
+        "WEREWOLF": 1
+    },
+    "isMe": false,
+    "role": "WEREWOLF",
+    "roleKnown": true,
+    "team": "WEREWOLF",
+    "teamKnown": true
+}
+{
+    "id": "13",
+    "alive": false,
+    "hostility": 120,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "14",
+    "alive": false,
+    "hostility": 320,
+    "complexity": 3,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0.08333333333333333,
+        "SEER": 0.08333333333333333,
+        "VILLAGER": 0.6666666666666666,
+        "ANY": 0,
+        "MEDIUM": 0.08333333333333333,
+        "WEREWOLF": 0,
+        "BODYGUARD": 0.08333333333333333,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "15",
+    "alive": true,
+    "hostility": -100,
+    "complexity": 0,
+    "roleProba": {
+        "FREEMASON": 0,
+        "POSSESSED": 0,
+        "SEER": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "MEDIUM": 0,
+        "WEREWOLF": 1,
+        "BODYGUARD": 0,
+        "FOX": 0
+    },
+    "teamProba": {
+        "HUMAN": 0,
+        "WEREWOLF": 1
+    },
+    "role": "WEREWOLF",
+    "team": "WEREWOLF",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
 }
