@@ -84,3 +84,7 @@ added TODO :
 
 - SEER, MEDIUM :- Sharing informations about known teams when the game
                 has progressed enough or when sensible information are found
+
+v.0.4 :
+
+* Added diary to keep track of past actions

@@ -80,7 +80,7 @@ def totalDict(dict):
 
 
 logFileName = "../log.last"
-logMode     = "print"
+logMode     = "write"
 
 def clearLog():
 

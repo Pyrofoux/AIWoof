@@ -58,30 +58,68 @@ class SampleAgent(object):
 		return None
 
 	def talk(self):
+
+
+
+
 		return cb.skip()
 
 	def whisper(self):
 
 		targetId = int(heatSort(self.tracker, heatAttack))
-		return cb.attack(targetId)
+		previousId = self.diary.readTodayNote(label = "attack target")
+
+		if previousId is None:
+			#Log choosen target
+			self.diary.todayNote("attack target", targetId)
+			return cb.attack(targetId)
+		else:
+			#Check if current target and previous have similar heat
+			#Change target if current is higher (in same heatmap)
+			heats = heatMap(self.tracker, heatAttack)
+			currentHeat = getHeat(targetId, heats)
+			previousHeat = getHeat(previousId, heats)
+
+			if currentHeat > previousHeat:
+				#Change target
+				self.diary.todayNote("attack target", targetId)
+				return cb.attack(targetId)
+			else :
+				return cb.skip()
+
 
 	def vote(self):
-		return heatSort(self.tracker, heatVote)
+
+		target = heatSort(self.tracker, heatVote)
+		self.diary.todayNote("voted", target)
+		return target
 
 	def attack(self):
-		return heatSort(self.tracker, heatAttack)
+
+		target = heatSort(self.tracker, heatAttack)
+		self.diary.todayNote("attacked", target)
+		return target
 
 	def divine(self):
-		return heatSort(self.tracker, heatDivine)
+
+		target = heatSort(self.tracker, heatDivine)
+		self.diary.todayNote("divined", target)
+		return target
 
 	def guard(self):
-		return heatSort(self.tracker, heatGuard)
+
+		target = heatSort(self.tracker, heatGuard)
+		self.diary.todayNote("guarded", target)
+		return target
 
 	def finish(self):
 
 		#log(self.tracker.profiles, json = 1)
 		self.tracker.printProfiles()
 		#print(getTimeStamp()+" inside Finish")
+
+		print(json.dumps(self.diary.notes))
+
 		return None
 
 

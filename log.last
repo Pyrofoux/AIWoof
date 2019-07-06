@@ -1,645 +1,23 @@
-{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': 3822262160846903087, 'roleNumMap': {'FREEMASON': 0, 'POSSESSED': 1, 'SEER': 1, 'VILLAGER': 8, 'ANY': 0, 'MEDIUM': 1, 'WEREWOLF': 3, 'BODYGUARD': 1, 'FOX': 0}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': 7486430385726095996, 'roleNumMap': {'FREEMASON': 0, 'POSSESSED': 1, 'SEER': 1, 'VILLAGER': 8, 'ANY': 0, 'MEDIUM': 1, 'WEREWOLF': 3, 'BODYGUARD': 1, 'FOX': 0}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
 {'agentIdx': 15, 'myRole': 'WEREWOLF', 'roleMap': {'15': 'WEREWOLF', '4': 'WEREWOLF', '12': 'WEREWOLF'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {'4': 10, '12': 10, '15': 10}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
 4 is in roleMap !
 12 is in roleMap !
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 1 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 2 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 3 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 5 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 6 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 7 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 8 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 9 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 10 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 11 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 13 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 deduced 14 is HUMAN
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
-teamMap 1
-{'HUMAN': 12, 'WEREWOLF': 0}
 {
     "id": "1",
     "alive": false,
-    "hostility": 160,
+    "hostility": 0,
     "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,
@@ -665,7 +43,7 @@ teamMap 1
 {
     "id": "2",
     "alive": false,
-    "hostility": 80,
+    "hostility": 480,
     "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,
@@ -716,9 +94,9 @@ teamMap 1
 }
 {
     "id": "4",
-    "alive": false,
-    "hostility": -60,
-    "complexity": 7,
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,
         "POSSESSED": 0,
@@ -742,8 +120,8 @@ teamMap 1
 }
 {
     "id": "5",
-    "alive": true,
-    "hostility": 120,
+    "alive": false,
+    "hostility": 480,
     "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,
@@ -769,7 +147,7 @@ teamMap 1
 {
     "id": "6",
     "alive": false,
-    "hostility": 105,
+    "hostility": 0,
     "complexity": 6,
     "roleProba": {
         "FREEMASON": 0,
@@ -820,9 +198,9 @@ teamMap 1
 }
 {
     "id": "8",
-    "alive": false,
-    "hostility": 0,
-    "complexity": 7,
+    "alive": true,
+    "hostility": 160,
+    "complexity": 6,
     "roleProba": {
         "FREEMASON": 0,
         "POSSESSED": 0.08333333333333333,
@@ -846,7 +224,7 @@ teamMap 1
 }
 {
     "id": "9",
-    "alive": false,
+    "alive": true,
     "hostility": 320,
     "complexity": 3,
     "roleProba": {
@@ -873,7 +251,7 @@ teamMap 1
 {
     "id": "10",
     "alive": false,
-    "hostility": 160,
+    "hostility": 0,
     "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,
@@ -899,7 +277,7 @@ teamMap 1
 {
     "id": "11",
     "alive": false,
-    "hostility": 280,
+    "hostility": 600,
     "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,
@@ -951,7 +329,7 @@ teamMap 1
 {
     "id": "13",
     "alive": false,
-    "hostility": 120,
+    "hostility": 0,
     "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,
@@ -977,7 +355,7 @@ teamMap 1
 {
     "id": "14",
     "alive": false,
-    "hostility": 320,
+    "hostility": 760,
     "complexity": 3,
     "roleProba": {
         "FREEMASON": 0,

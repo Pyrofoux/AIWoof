@@ -75,9 +75,8 @@ def heatGuard(id, tracker, profile, roles, myProfile):
     return 0
 
 
-def heatSort(tracker, heatFunction):
-    #Calculate heat according to heatFunction and return the agent with highest heat
-
+def heatMap(tracker, heatFunction):
+    #Calculate heat of agents according to heatFunction
     agentList = []
 
     myProfile = tracker.profiles[tracker.myId]
@@ -97,13 +96,20 @@ def heatSort(tracker, heatFunction):
     random.shuffle(agentList)
 
     agentList.sort(key = lambda couple : couple['heat'], reverse=True)
-    targetId = agentList[0]['id']
+
+    return agentList
+
+def heatSort(tracker, heatFunction):
+    #Calculate heat according to heatFunction and return the agent with highest heat
+
+    sortedHeat = heatMap(tracker, heatFunction)
+    targetId = sortedHeat[0]['id']
     return targetId
 
 
-def getHeat(id, heatMap):
+def getHeat(id, map):
 
-    for i in heatMap:
-        if heatMap[i][id] == id:
-            return heatMap[i]['heat']
+    for agent in map:
+        if int(agent['id']) == id:
+            return agent['heat']
     return None
