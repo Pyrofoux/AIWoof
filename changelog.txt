@@ -62,3 +62,24 @@ v.0.2 :
         * removed getting role info from whispers
 
 * Gets all roles from roleMap
+
+06/07/19
+
+v.0.3
+
+* Role estimations are now made according to every certain information
+  about teams and remaining roles , using Bayesian probabilities
+
+added TODO :
+- WEREWOLF :- When multiple targets have the same heat, KQ keeps
+              saying a different target when whispering.
+              Should choose a unique target and declare attack once
+
+            - Increase hostility (or other metric) when other wolves
+            suggest that someone is SEER, MEDIUM, and decrease when POSSESSED
+
+            - Detect hostility when someone is hostile towards other wolf
+
+- SEER, MEDIUM :- Sharing informations about known teams when the game
+                has progressed enough or when sensible information are found
+- VILLAGER     :

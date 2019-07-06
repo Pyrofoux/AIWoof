@@ -39,7 +39,7 @@ def updateRoleEstimations(tracker):
             roleMap[role] -= 1
             teamMap[team] -= 1
 
-
+ 
 
     #Calculate probabilities when role is known
     #+ remove known roles from current team map
