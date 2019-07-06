@@ -18,6 +18,7 @@ import sys
 from toolbox import *
 from tracker import *
 from heatSort import *
+from diary import *
 
 class SampleAgent(object):
 
@@ -27,6 +28,7 @@ class SampleAgent(object):
 		self.sleeptime = 0.1
 
 		self.tracker = Tracker()
+		self.diary	 = Diary()
 
 		clearLog()
 
@@ -51,6 +53,7 @@ class SampleAgent(object):
 	def dayStart(self):
 
 		self.tracker.nextDay()
+		self.diary.nextDay()
 
 		return None
 

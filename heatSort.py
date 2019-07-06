@@ -99,3 +99,11 @@ def heatSort(tracker, heatFunction):
     agentList.sort(key = lambda couple : couple['heat'], reverse=True)
     targetId = agentList[0]['id']
     return targetId
+
+
+def getHeat(id, heatMap):
+
+    for i in heatMap:
+        if heatMap[i][id] == id:
+            return heatMap[i]['heat']
+    return None

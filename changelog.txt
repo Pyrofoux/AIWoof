@@ -70,6 +70,8 @@ v.0.3
 * Role estimations are now made according to every certain information
   about teams and remaining roles , using Bayesian probabilities
 
+* MEDIUM identifications are parsed
+
 added TODO :
 - WEREWOLF :- When multiple targets have the same heat, KQ keeps
               saying a different target when whispering.
@@ -82,4 +84,3 @@ added TODO :
 
 - SEER, MEDIUM :- Sharing informations about known teams when the game
                 has progressed enough or when sensible information are found
-- VILLAGER     :
