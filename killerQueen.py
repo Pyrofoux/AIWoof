@@ -27,9 +27,6 @@ class SampleAgent(object):
 		self.myname = agentName
 		self.sleeptime = 0.1
 
-		self.tracker = Tracker()
-		self.diary	 = Diary()
-
 		clearLog()
 
 	def getName(self):
@@ -42,29 +39,128 @@ class SampleAgent(object):
 		log(gameSetting)
 		log(baseInfo)
 
+		self.tracker = Tracker()
+		self.diary	 = Diary()
+
+		#Keep tracks of how many times we had to talk today
+		self.talkCount = 0
+
+		#Keep tracks of how many times we had to talk today
+		self.whisperCount = 0
+
+
 		self.tracker.createProfiles(baseInfo, gameSetting)
 		#log(self.tracker.profiles)
 
 
 	def update(self, baseInfo, diffData, request):
 		self.baseInfo = baseInfo
-		self.tracker.update(baseInfo, diffData)
+		self.tracker.update(baseInfo, diffData, self.diary)
 
 	def dayStart(self):
 
 		self.tracker.nextDay()
 		self.diary.nextDay()
 
+		self.talkCount = 0
+		self.whisperCount = 0
+
+
+		if self.tracker.myRole == "POSSESSED":
+			#POSSESSED disguise as a SEER and does fake divinations
+
+			fakeList = self.diary.readNodayNote("fakeDivinedList")
+
+			if fakeList is None:
+				fakeList = [self.tracker.myId]
+
+			alives = getAliveId(self.baseInfo)
+			remaining = [id for id in alives if not id in fakeList]
+
+			if len(remaining) > 0:
+				target = random.choice(remaining)
+
+				fakeList.append(target)
+
+				self.diary.todayNote("fakeDivined", {'id':target, 'team':'HUMAN'})
+				self.diary.nodayNote("fakeDivinedList", fakeList)
 		return None
 
 	def talk(self):
 
+		self.talkCount += 1
 
 
+		#Tell about our divinations if we're SEER
+		#Code should be refactored in proper module
+
+		#Todo : don't reveal until we find a werewolf
+		#or there's like only 65% of remaining alive
+
+		#Todo : POSSESSED tell about its fake divinations
+		#and randomly select someone to fake divine as human every day
+
+		if self.tracker.myRole == "SEER":
+
+			#Reveal all our divinations when we have seen a wolf or when there's 60% alive players
+			if (self.tracker.totalAlivePlayers <= 0.60*self.tracker.totalPlayers)  or (self.diary.readNodayNote('seenWolf') == True):
+			#if  False:
+				divinations = self.diary.readAllNotes(label = "divined")
+
+				dayCount = 0
+				for day in sorted(divinations.keys(), reverse=True):
+
+					dayCount += 1
+					if self.talkCount == dayCount+1:
+						divination = divinations[day]['divined']
+						id = divination['id']
+						team = divination['team']
+						return "DAY "+str(day)+" ("+cb.divined(int(id), team)+")"
+
+					elif self.talkCount == 1:
+						return cb.comingout(int(self.tracker.myId), "SEER")
+
+		if self.tracker.myRole == "MEDIUM":
+			#Reveal all our divinations when we have seen a wolf or when there's 60% alive players
+			if (self.tracker.totalAlivePlayers <= 0.60*self.tracker.totalPlayers) or (self.diary.readNodayNote('seenWolf') == True):
+			#if  False:
+				divinations = self.diary.readAllNotes(label = "identified")
+
+				dayCount = 0
+				for day in sorted(divinations.keys(), reverse=True):
+
+					dayCount += 1
+					if self.talkCount == dayCount+1:
+						divination = divinations[day]['identified']
+						id = divination['id']
+						team = divination['team']
+						return "DAY "+str(day)+" ("+cb.identified(int(id), team)+")"
+
+					elif self.talkCount == 1:
+						return cb.comingout(int(self.tracker.myId), "MEDIUM")
+
+		if self.tracker.myRole == "POSSESSED":
+
+			divinations = self.diary.readAllNotes(label = "fakeDivined")
+
+			dayCount = 0
+			for day in sorted(divinations.keys(), reverse=True):
+
+				dayCount += 1
+				if self.talkCount == dayCount+1:
+					divination = divinations[day]['fakeDivined']
+					id = divination['id']
+					team = divination['team']
+					return "DAY "+str(day)+" ("+cb.divined(int(id), team)+")"
+
+				elif self.talkCount == 1:
+					return cb.comingout(int(self.tracker.myId), "SEER")
 
 		return cb.skip()
 
 	def whisper(self):
+
+		self.whisperCount += 1
 
 		targetId = int(heatSort(self.tracker, heatAttack))
 		previousId = self.diary.readTodayNote(label = "attack target")
@@ -73,6 +169,8 @@ class SampleAgent(object):
 			#Log choosen target
 			self.diary.todayNote("attack target", targetId)
 			return cb.attack(targetId)
+
+
 		else:
 			#Check if current target and previous have similar heat
 			#Change target if current is higher (in same heatmap)
@@ -103,7 +201,6 @@ class SampleAgent(object):
 	def divine(self):
 
 		target = heatSort(self.tracker, heatDivine)
-		self.diary.todayNote("divined", target)
 		return target
 
 	def guard(self):
@@ -117,8 +214,9 @@ class SampleAgent(object):
 		#log(self.tracker.profiles, json = 1)
 		self.tracker.printProfiles()
 		#print(getTimeStamp()+" inside Finish")
+		log(json.dumps(self.diary.notes))
 
-		print(json.dumps(self.diary.notes))
+
 
 		return None
 

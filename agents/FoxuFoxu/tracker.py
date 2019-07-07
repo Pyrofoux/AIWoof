@@ -80,8 +80,6 @@ class Tracker(object):
 
                 if id in baseInfo['roleMap']:
 
-                    log(id+" is in roleMap !")
-
                     profile['role']         = baseInfo['roleMap'][id]
                     profile['roleKnown']    = True
                     profile['team']         = role2divined[profile['role']]
@@ -99,7 +97,7 @@ class Tracker(object):
 
         updateRoleEstimations(self)
 
-    def update(self, baseInfo, diffData):
+    def update(self, baseInfo, diffData, diary):
         #Updates the profiles according to recent informations
 
         #Updating alive/dead status
@@ -125,11 +123,22 @@ class Tracker(object):
                 self.profiles[result['id']]['team'] = result['team']
                 self.profiles[result['id']]['teamKnown'] = True
 
+                diary.todayNote('divined',{'id':result['id'] ,'team': result['team']})
+
+                if result['team'] == 'WEREWOLF':
+                    diary.nodayNote('seenWolf', True)
+
+
             elif row.type == 'identify':
 
                 result = formatDivine(row.text)
                 self.profiles[result['id']]['team'] = result['team']
                 self.profiles[result['id']]['teamKnown'] = True
+
+                diary.todayNote('identified',{'id':result['id'] ,'team': result['team']})
+
+                if result['team'] == 'WEREWOLF':
+                    diary.nodayNote('seenWolf', True)
 
             elif row.type == 'talk':
 
@@ -155,9 +164,11 @@ class Tracker(object):
                     profile['team'] = 'HUMAN'
                     profile['teamKnown'] = True
 
+            elif row.type == 'vote':
+                None
+
         updateRoleEstimations(self)
         updateTextMetrics(self)
-        #log(self.profiles, json = 1)
 
 
     def nextDay(self):

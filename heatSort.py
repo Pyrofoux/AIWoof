@@ -31,7 +31,7 @@ def heatAttack(id, tracker, profile, roles, myProfile):
     if not profile['alive']:
         return minimumHeat
 
-    if profile['teamKnown'] and profile['team'] == 'WEREWOLF':
+    if profile['team'] == 'WEREWOLF':
         return minimumHeat
 
     rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER']

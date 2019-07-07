@@ -39,7 +39,7 @@ def updateRoleEstimations(tracker):
             roleMap[role] -= 1
             teamMap[team] -= 1
 
- 
+
 
     #Calculate probabilities when role is known
     #+ remove known roles from current team map
@@ -156,7 +156,6 @@ def checkRoleDeductions(tracker):
                     profile['teamKnown'] = True
                     didDeductions = True
 
-                    log("deduced "+id+" is "+team)
 
         #Check if we can guess the role  based on probabilities
         if profile['roleKnown'] == False:
@@ -170,7 +169,6 @@ def checkRoleDeductions(tracker):
                     profile['roleKnown'] = True
                     profile['role'] = role
                     didDeductions = True
-                    log("deduced "+id+" is "+role)
 
 
         #If we made deductions, recalculate probabilities

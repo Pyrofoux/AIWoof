@@ -1,44 +1,30 @@
-{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': 7486430385726095996, 'roleNumMap': {'FREEMASON': 0, 'POSSESSED': 1, 'SEER': 1, 'VILLAGER': 8, 'ANY': 0, 'MEDIUM': 1, 'WEREWOLF': 3, 'BODYGUARD': 1, 'FOX': 0}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
-{'agentIdx': 15, 'myRole': 'WEREWOLF', 'roleMap': {'15': 'WEREWOLF', '4': 'WEREWOLF', '12': 'WEREWOLF'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {'4': 10, '12': 10, '15': 10}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
-4 is in roleMap !
-12 is in roleMap !
-deduced 1 is HUMAN
-deduced 2 is HUMAN
-deduced 3 is HUMAN
-deduced 5 is HUMAN
-deduced 6 is HUMAN
-deduced 7 is HUMAN
-deduced 8 is HUMAN
-deduced 9 is HUMAN
-deduced 10 is HUMAN
-deduced 11 is HUMAN
-deduced 13 is HUMAN
-deduced 14 is HUMAN
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'SEER', 'roleMap': {'15': 'SEER'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
 {
     "id": "1",
     "alive": false,
-    "hostility": 0,
+    "hostility": 800,
     "complexity": 3,
     "roleProba": {
-        "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
-        "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
     },
     "teamProba": {
-        "HUMAN": 1,
-        "WEREWOLF": 0
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
     },
     "isMe": false,
     "role": "???",
     "roleKnown": false,
-    "team": "HUMAN",
-    "teamKnown": true
+    "team": "???",
+    "teamKnown": false
 }
 {
     "id": "2",
@@ -46,93 +32,93 @@ deduced 14 is HUMAN
     "hostility": 480,
     "complexity": 3,
     "roleProba": {
-        "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
-        "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
     },
     "teamProba": {
-        "HUMAN": 1,
-        "WEREWOLF": 0
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
     },
     "isMe": false,
     "role": "???",
     "roleKnown": false,
-    "team": "HUMAN",
-    "teamKnown": true
+    "team": "???",
+    "teamKnown": false
 }
 {
     "id": "3",
     "alive": false,
-    "hostility": 40,
+    "hostility": 0,
     "complexity": 3,
     "roleProba": {
-        "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
-        "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
     },
     "teamProba": {
-        "HUMAN": 1,
-        "WEREWOLF": 0
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
     },
     "isMe": false,
     "role": "???",
     "roleKnown": false,
-    "team": "HUMAN",
-    "teamKnown": true
+    "team": "???",
+    "teamKnown": false
 }
 {
     "id": "4",
-    "alive": true,
-    "hostility": 0,
+    "alive": false,
+    "hostility": 640,
     "complexity": 3,
     "roleProba": {
-        "FREEMASON": 0,
-        "POSSESSED": 0,
-        "SEER": 0,
-        "VILLAGER": 0,
-        "ANY": 0,
-        "MEDIUM": 0,
-        "WEREWOLF": 1,
-        "BODYGUARD": 0,
-        "FOX": 0
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
     },
     "teamProba": {
-        "HUMAN": 0,
-        "WEREWOLF": 1
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
     },
     "isMe": false,
-    "role": "WEREWOLF",
-    "roleKnown": true,
-    "team": "WEREWOLF",
-    "teamKnown": true
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
 }
 {
     "id": "5",
     "alive": false,
-    "hostility": 480,
+    "hostility": 640,
     "complexity": 3,
     "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0.7272727272727273,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
@@ -148,17 +134,1589 @@ deduced 14 is HUMAN
     "id": "6",
     "alive": false,
     "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 320,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "8",
+    "alive": true,
+    "hostility": 480,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "10",
+    "alive": true,
+    "hostility": 160,
     "complexity": 6,
     "roleProba": {
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
+    },
+    "teamProba": {
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
+    },
+    "teamProba": {
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 120,
+    "complexity": 4,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0.7272727272727273,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "13",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
+    },
+    "teamProba": {
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "14",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.04464285714285714,
+        "MEDIUM": 0.04464285714285714,
+        "POSSESSED": 0.04464285714285714,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.3571428571428571,
+        "ANY": 0.0,
+        "WEREWOLF": 0.08035714285714285
+    },
+    "teamProba": {
+        "HUMAN": 0.625,
+        "WEREWOLF": 0.375
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 0,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 0,
+        "SEER": 1,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "SEER",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"divined": {"id": "8", "team": "HUMAN"}}, "2": {"voted": "3", "divined": {"id": "6", "team": "HUMAN"}}, "3": {"voted": "7", "divined": {"id": "7", "team": "HUMAN"}}, "4": {"voted": "12", "divined": {"id": "12", "team": "HUMAN"}}, "5": {"voted": "1"}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'SEER', 'roleMap': {'15': 'SEER'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.06666666666666667,
+        "MEDIUM": 0.06666666666666667,
+        "POSSESSED": 0.06666666666666667,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5333333333333333,
+        "ANY": 0.0,
+        "WEREWOLF": 0.016666666666666666
+    },
+    "teamProba": {
+        "HUMAN": 0.8,
+        "WEREWOLF": 0.2
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.06666666666666667,
+        "MEDIUM": 0.06666666666666667,
+        "POSSESSED": 0.06666666666666667,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5333333333333333,
+        "ANY": 0.0,
+        "WEREWOLF": 0.016666666666666666
+    },
+    "teamProba": {
+        "HUMAN": 0.8,
+        "WEREWOLF": 0.2
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "3",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": 400,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 400,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.06666666666666667,
+        "MEDIUM": 0.06666666666666667,
+        "POSSESSED": 0.06666666666666667,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5333333333333333,
+        "ANY": 0.0,
+        "WEREWOLF": 0.016666666666666666
+    },
+    "teamProba": {
+        "HUMAN": 0.8,
+        "WEREWOLF": 0.2
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 640,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 200,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.06666666666666667,
+        "MEDIUM": 0.06666666666666667,
+        "POSSESSED": 0.06666666666666667,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5333333333333333,
+        "ANY": 0.0,
+        "WEREWOLF": 0.016666666666666666
+    },
+    "teamProba": {
+        "HUMAN": 0.8,
+        "WEREWOLF": 0.2
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "10",
+    "alive": false,
+    "hostility": 400,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 0,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 1
+    },
+    "teamProba": {
+        "HUMAN": 0,
+        "WEREWOLF": 1
+    },
+    "isMe": false,
+    "role": "WEREWOLF",
+    "roleKnown": true,
+    "team": "WEREWOLF",
+    "teamKnown": true
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "13",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 0,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 1
+    },
+    "teamProba": {
+        "HUMAN": 0,
+        "WEREWOLF": 1
+    },
+    "isMe": false,
+    "role": "WEREWOLF",
+    "roleKnown": true,
+    "team": "WEREWOLF",
+    "teamKnown": true
+}
+{
+    "id": "14",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.06666666666666667,
+        "MEDIUM": 0.06666666666666667,
+        "POSSESSED": 0.06666666666666667,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5333333333333333,
+        "ANY": 0.0,
+        "WEREWOLF": 0.016666666666666666
+    },
+    "teamProba": {
+        "HUMAN": 0.8,
+        "WEREWOLF": 0.2
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 0,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 0,
+        "SEER": 1,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "SEER",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"divined": {"id": "13", "team": "WEREWOLF"}}, "0": {"seenWolf": true}, "2": {"voted": "3", "divined": {"id": "3", "team": "HUMAN"}}, "3": {"voted": "12", "divined": {"id": "12", "team": "HUMAN"}}, "4": {"voted": "12", "divined": {"id": "7", "team": "HUMAN"}}, "5": {"voted": "3", "divined": {"id": "4", "team": "HUMAN"}}, "6": {"voted": "7", "divined": {"id": "10", "team": "HUMAN"}}, "7": {"voted": "7", "divined": {"id": "11", "team": "WEREWOLF"}}, "8": {"voted": "4"}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'POSSESSED', 'roleMap': {'15': 'POSSESSED'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "3",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 80,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "10",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "13",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "14",
+    "alive": true,
+    "hostility": 120,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 1,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 1,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "POSSESSED",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"fakeDivined": {"id": 9, "team": "HUMAN"}}, "0": {"fakeDivinedList": ["15", 9, 10, 5, 3, 1, 2, 14]}, "2": {"fakeDivined": {"id": 10, "team": "HUMAN"}, "voted": "7"}, "3": {"fakeDivined": {"id": 5, "team": "HUMAN"}, "voted": "7"}, "4": {"fakeDivined": {"id": 3, "team": "HUMAN"}, "voted": "14"}, "5": {"fakeDivined": {"id": 1, "team": "HUMAN"}}, "6": {"fakeDivined": {"id": 2, "team": "HUMAN"}}, "7": {"fakeDivined": {"id": 14, "team": "HUMAN"}}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'POSSESSED', 'roleMap': {'15': 'POSSESSED'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 2000,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 280,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "3",
+    "alive": false,
+    "hostility": 1120,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": -15,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 1120,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 1240,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 1080,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 800,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 2360,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "10",
+    "alive": false,
+    "hostility": 520,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "13",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "14",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 1,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 1,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "POSSESSED",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"fakeDivined": {"id": 3, "team": "HUMAN"}}, "0": {"fakeDivinedList": ["15", 3, 6, 14, 7, 1, 5, 9, 8, 11]}, "2": {"fakeDivined": {"id": 6, "team": "HUMAN"}, "voted": "8"}, "3": {"fakeDivined": {"id": 14, "team": "HUMAN"}, "voted": "14"}, "4": {"fakeDivined": {"id": 7, "team": "HUMAN"}, "voted": "3"}, "5": {"fakeDivined": {"id": 1, "team": "HUMAN"}, "voted": "3"}, "6": {"fakeDivined": {"id": 5, "team": "HUMAN"}, "voted": "9"}, "7": {"fakeDivined": {"id": 9, "team": "HUMAN"}, "voted": "1"}, "8": {"fakeDivined": {"id": 8, "team": "HUMAN"}, "voted": "9"}, "9": {"fakeDivined": {"id": 11, "team": "HUMAN"}, "voted": "1"}, "10": {"voted": "9"}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'POSSESSED', 'roleMap': {'15': 'POSSESSED'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "3",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
@@ -176,15 +1734,408 @@ deduced 14 is HUMAN
     "hostility": 0,
     "complexity": 7,
     "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "10",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0.7272727272727273,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "13",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "14",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 1,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 1,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "POSSESSED",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"fakeDivined": {"id": 10, "team": "HUMAN"}}, "0": {"fakeDivinedList": ["15", 10, 8, 7, 9, 13, 3, 1]}, "2": {"fakeDivined": {"id": 8, "team": "HUMAN"}, "voted": "10"}, "3": {"fakeDivined": {"id": 7, "team": "HUMAN"}}, "4": {"fakeDivined": {"id": 9, "team": "HUMAN"}}, "5": {"fakeDivined": {"id": 13, "team": "HUMAN"}}, "6": {"fakeDivined": {"id": 3, "team": "HUMAN"}}, "7": {"fakeDivined": {"id": 1, "team": "HUMAN"}}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'SEER', 'roleMap': {'15': 'SEER'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "3",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.07142857142857142,
+        "MEDIUM": 0.07142857142857142,
+        "POSSESSED": 0.07142857142857142,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5714285714285714,
+        "ANY": 0.0,
+        "WEREWOLF": 0.011904761904761904
+    },
+    "teamProba": {
+        "HUMAN": 0.8571428571428571,
+        "WEREWOLF": 0.14285714285714285
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.07142857142857142,
+        "MEDIUM": 0.07142857142857142,
+        "POSSESSED": 0.07142857142857142,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5714285714285714,
+        "ANY": 0.0,
+        "WEREWOLF": 0.011904761904761904
+    },
+    "teamProba": {
+        "HUMAN": 0.8571428571428571,
+        "WEREWOLF": 0.14285714285714285
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.07142857142857142,
+        "MEDIUM": 0.07142857142857142,
+        "POSSESSED": 0.07142857142857142,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5714285714285714,
+        "ANY": 0.0,
+        "WEREWOLF": 0.011904761904761904
+    },
+    "teamProba": {
+        "HUMAN": 0.8571428571428571,
+        "WEREWOLF": 0.14285714285714285
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
@@ -199,18 +2150,411 @@ deduced 14 is HUMAN
 {
     "id": "8",
     "alive": true,
-    "hostility": 160,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.07142857142857142,
+        "MEDIUM": 0.07142857142857142,
+        "POSSESSED": 0.07142857142857142,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5714285714285714,
+        "ANY": 0.0,
+        "WEREWOLF": 0.011904761904761904
+    },
+    "teamProba": {
+        "HUMAN": 0.8571428571428571,
+        "WEREWOLF": 0.14285714285714285
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0.09090909090909091,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "10",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.07142857142857142,
+        "MEDIUM": 0.07142857142857142,
+        "POSSESSED": 0.07142857142857142,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5714285714285714,
+        "ANY": 0.0,
+        "WEREWOLF": 0.011904761904761904
+    },
+    "teamProba": {
+        "HUMAN": 0.8571428571428571,
+        "WEREWOLF": 0.14285714285714285
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 0,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 1
+    },
+    "teamProba": {
+        "HUMAN": 0,
+        "WEREWOLF": 1
+    },
+    "isMe": false,
+    "role": "WEREWOLF",
+    "roleKnown": true,
+    "team": "WEREWOLF",
+    "teamKnown": true
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.07142857142857142,
+        "MEDIUM": 0.07142857142857142,
+        "POSSESSED": 0.07142857142857142,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5714285714285714,
+        "ANY": 0.0,
+        "WEREWOLF": 0.011904761904761904
+    },
+    "teamProba": {
+        "HUMAN": 0.8571428571428571,
+        "WEREWOLF": 0.14285714285714285
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "13",
+    "alive": true,
+    "hostility": -45,
     "complexity": 6,
     "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 0,
+        "SEER": 0,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 1
+    },
+    "teamProba": {
+        "HUMAN": 0,
+        "WEREWOLF": 1
+    },
+    "isMe": false,
+    "role": "WEREWOLF",
+    "roleKnown": true,
+    "team": "WEREWOLF",
+    "teamKnown": true
+}
+{
+    "id": "14",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.07142857142857142,
+        "MEDIUM": 0.07142857142857142,
+        "POSSESSED": 0.07142857142857142,
+        "SEER": 0.0,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.5714285714285714,
+        "ANY": 0.0,
+        "WEREWOLF": 0.011904761904761904
+    },
+    "teamProba": {
+        "HUMAN": 0.8571428571428571,
+        "WEREWOLF": 0.14285714285714285
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 0,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 0,
+        "SEER": 1,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "SEER",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"divined": {"id": "13", "team": "WEREWOLF"}}, "0": {"seenWolf": true}, "2": {"voted": "13", "divined": {"id": "7", "team": "HUMAN"}}, "3": {"voted": "13", "divined": {"id": "5", "team": "HUMAN"}}, "4": {"voted": "7", "divined": {"id": "11", "team": "WEREWOLF"}}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'POSSESSED', 'roleMap': {'15': 'POSSESSED'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 240,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "3",
+    "alive": true,
+    "hostility": 1280,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": 560,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 1440,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 800,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 480,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
@@ -224,19 +2568,1198 @@ deduced 14 is HUMAN
 }
 {
     "id": "9",
-    "alive": true,
-    "hostility": 320,
+    "alive": false,
+    "hostility": 1080,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "10",
+    "alive": false,
+    "hostility": 1040,
     "complexity": 3,
     "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "13",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "14",
+    "alive": true,
+    "hostility": 480,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": true,
+    "hostility": -100,
+    "complexity": 1,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 1,
+        "SEER": 0,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "POSSESSED",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"fakeDivined": {"id": 9, "team": "HUMAN"}}, "0": {"fakeDivinedList": ["15", 9, 10, 7, 14, 11, 1, 3]}, "2": {"fakeDivined": {"id": 10, "team": "HUMAN"}, "voted": "14"}, "3": {"fakeDivined": {"id": 7, "team": "HUMAN"}, "voted": "14"}, "4": {"fakeDivined": {"id": 14, "team": "HUMAN"}, "voted": "7"}, "5": {"fakeDivined": {"id": 11, "team": "HUMAN"}, "voted": "6"}, "6": {"fakeDivined": {"id": 1, "team": "HUMAN"}, "voted": "6"}, "7": {"fakeDivined": {"id": 3, "team": "HUMAN"}, "voted": "9"}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'POSSESSED', 'roleMap': {'15': 'POSSESSED'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 640,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "3",
+    "alive": true,
+    "hostility": 640,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": 480,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 520,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 40,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 640,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "10",
+    "alive": false,
+    "hostility": 640,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "13",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "14",
+    "alive": true,
+    "hostility": 160,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 1,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 1,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "POSSESSED",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"fakeDivined": {"id": 10, "team": "HUMAN"}}, "0": {"fakeDivinedList": ["15", 10, 7, 6, 1, 2, 14, 11]}, "2": {"fakeDivined": {"id": 7, "team": "HUMAN"}, "voted": "9"}, "3": {"fakeDivined": {"id": 6, "team": "HUMAN"}, "voted": "8"}, "4": {"fakeDivined": {"id": 1, "team": "HUMAN"}, "voted": "9"}, "5": {"fakeDivined": {"id": 2, "team": "HUMAN"}, "voted": "2"}, "6": {"fakeDivined": {"id": 14, "team": "HUMAN"}}, "7": {"fakeDivined": {"id": 11, "team": "HUMAN"}}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'POSSESSED', 'roleMap': {'15': 'POSSESSED'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "2",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "3",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "4",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "6",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "10",
+    "alive": false,
+    "hostility": -20,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "11",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "HUMAN",
+    "teamKnown": true
+}
+{
+    "id": "13",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "14",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.049999999999999996,
+        "MEDIUM": 0.049999999999999996,
+        "POSSESSED": 0.0,
+        "SEER": 0.049999999999999996,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.39999999999999997,
+        "ANY": 0.0,
+        "WEREWOLF": 0.06428571428571428
+    },
+    "teamProba": {
+        "HUMAN": 0.7,
+        "WEREWOLF": 0.3
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": true,
+    "hostility": -100,
+    "complexity": 1,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 1,
+        "SEER": 0,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0,
+        "ANY": 0,
+        "WEREWOLF": 0
+    },
+    "teamProba": {
+        "HUMAN": 1,
+        "WEREWOLF": 0
+    },
+    "role": "POSSESSED",
+    "team": "HUMAN",
+    "roleKnown": true,
+    "teamKnown": true,
+    "isMe": true
+}
+{"1": {"fakeDivined": {"id": 9, "team": "HUMAN"}}, "0": {"fakeDivinedList": ["15", 9, 2, 14, 13, 4, 7]}, "2": {"fakeDivined": {"id": 2, "team": "HUMAN"}, "voted": "12"}, "3": {"fakeDivined": {"id": 14, "team": "HUMAN"}, "voted": "11"}, "4": {"fakeDivined": {"id": 13, "team": "HUMAN"}, "voted": "11"}, "5": {"fakeDivined": {"id": 4, "team": "HUMAN"}, "voted": "11"}, "6": {"fakeDivined": {"id": 7, "team": "HUMAN"}, "voted": "11"}}
+{'enableNoAttack': False, 'enableNoExecution': False, 'enableRoleRequest': True, 'maxAttackRevote': 1, 'maxRevote': 1, 'maxSkip': 2, 'maxTalk': 10, 'maxTalkTurn': 20, 'maxWhisper': 10, 'maxWhisperTurn': 20, 'playerNum': 15, 'randomSeed': -1078597838206294904, 'roleNumMap': {'BODYGUARD': 1, 'MEDIUM': 1, 'POSSESSED': 1, 'SEER': 1, 'FOX': 0, 'FREEMASON': 0, 'VILLAGER': 8, 'ANY': 0, 'WEREWOLF': 3}, 'talkOnFirstDay': False, 'timeLimit': 1000, 'validateUtterance': True, 'votableInFirstDay': False, 'voteVisible': True, 'whisperBeforeRevote': False}
+{'agentIdx': 15, 'myRole': 'POSSESSED', 'roleMap': {'15': 'POSSESSED'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10, '6': 10, '7': 10, '8': 10, '9': 10, '10': 10, '11': 10, '12': 10, '13': 10, '14': 10, '15': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE', '6': 'ALIVE', '7': 'ALIVE', '8': 'ALIVE', '9': 'ALIVE', '10': 'ALIVE', '11': 'ALIVE', '12': 'ALIVE', '13': 'ALIVE', '14': 'ALIVE', '15': 'ALIVE'}}
+{
+    "id": "1",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "2",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "3",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "4",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 6,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "5",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "6",
+    "alive": true,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "7",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "8",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "9",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 3,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
+        "FREEMASON": 0,
+        "VILLAGER": 0.7272727272727273,
+        "ANY": 0,
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
@@ -254,15 +3777,15 @@ deduced 14 is HUMAN
     "hostility": 0,
     "complexity": 3,
     "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0.7272727272727273,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
@@ -276,19 +3799,45 @@ deduced 14 is HUMAN
 }
 {
     "id": "11",
-    "alive": false,
-    "hostility": 600,
+    "alive": true,
+    "hostility": 0,
     "complexity": 3,
     "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "12",
+    "alive": false,
+    "hostility": 0,
+    "complexity": 7,
+    "roleProba": {
+        "BODYGUARD": 0.09090909090909091,
+        "MEDIUM": 0.09090909090909091,
+        "POSSESSED": 0,
+        "SEER": 0.09090909090909091,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0.7272727272727273,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
@@ -298,109 +3847,84 @@ deduced 14 is HUMAN
     "role": "???",
     "roleKnown": false,
     "team": "HUMAN",
-    "teamKnown": true
-}
-{
-    "id": "12",
-    "alive": true,
-    "hostility": 0,
-    "complexity": 7,
-    "roleProba": {
-        "FREEMASON": 0,
-        "POSSESSED": 0,
-        "SEER": 0,
-        "VILLAGER": 0,
-        "ANY": 0,
-        "MEDIUM": 0,
-        "WEREWOLF": 1,
-        "BODYGUARD": 0,
-        "FOX": 0
-    },
-    "teamProba": {
-        "HUMAN": 0,
-        "WEREWOLF": 1
-    },
-    "isMe": false,
-    "role": "WEREWOLF",
-    "roleKnown": true,
-    "team": "WEREWOLF",
     "teamKnown": true
 }
 {
     "id": "13",
-    "alive": false,
+    "alive": true,
     "hostility": 0,
-    "complexity": 3,
+    "complexity": 7,
     "roleProba": {
-        "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
-        "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
     },
     "teamProba": {
-        "HUMAN": 1,
-        "WEREWOLF": 0
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
     },
     "isMe": false,
     "role": "???",
     "roleKnown": false,
-    "team": "HUMAN",
-    "teamKnown": true
+    "team": "???",
+    "teamKnown": false
 }
 {
     "id": "14",
-    "alive": false,
-    "hostility": 760,
+    "alive": true,
+    "hostility": 0,
     "complexity": 3,
     "roleProba": {
+        "BODYGUARD": 0.051948051948051945,
+        "MEDIUM": 0.051948051948051945,
+        "POSSESSED": 0.0,
+        "SEER": 0.051948051948051945,
+        "FOX": 0.0,
+        "FREEMASON": 0.0,
+        "VILLAGER": 0.41558441558441556,
+        "ANY": 0.0,
+        "WEREWOLF": 0.05844155844155843
+    },
+    "teamProba": {
+        "HUMAN": 0.7272727272727273,
+        "WEREWOLF": 0.2727272727272727
+    },
+    "isMe": false,
+    "role": "???",
+    "roleKnown": false,
+    "team": "???",
+    "teamKnown": false
+}
+{
+    "id": "15",
+    "alive": false,
+    "hostility": -100,
+    "complexity": 1,
+    "roleProba": {
+        "BODYGUARD": 0,
+        "MEDIUM": 0,
+        "POSSESSED": 1,
+        "SEER": 0,
+        "FOX": 0,
         "FREEMASON": 0,
-        "POSSESSED": 0.08333333333333333,
-        "SEER": 0.08333333333333333,
-        "VILLAGER": 0.6666666666666666,
+        "VILLAGER": 0,
         "ANY": 0,
-        "MEDIUM": 0.08333333333333333,
-        "WEREWOLF": 0,
-        "BODYGUARD": 0.08333333333333333,
-        "FOX": 0
+        "WEREWOLF": 0
     },
     "teamProba": {
         "HUMAN": 1,
         "WEREWOLF": 0
     },
-    "isMe": false,
-    "role": "???",
-    "roleKnown": false,
+    "role": "POSSESSED",
     "team": "HUMAN",
-    "teamKnown": true
-}
-{
-    "id": "15",
-    "alive": true,
-    "hostility": -100,
-    "complexity": 0,
-    "roleProba": {
-        "FREEMASON": 0,
-        "POSSESSED": 0,
-        "SEER": 0,
-        "VILLAGER": 0,
-        "ANY": 0,
-        "MEDIUM": 0,
-        "WEREWOLF": 1,
-        "BODYGUARD": 0,
-        "FOX": 0
-    },
-    "teamProba": {
-        "HUMAN": 0,
-        "WEREWOLF": 1
-    },
-    "role": "WEREWOLF",
-    "team": "WEREWOLF",
     "roleKnown": true,
     "teamKnown": true,
     "isMe": true
 }
+{"1": {"fakeDivined": {"id": 6, "team": "HUMAN"}}, "0": {"fakeDivinedList": ["15", 6, 9, 7, 11, 8, 13]}, "2": {"fakeDivined": {"id": 9, "team": "HUMAN"}, "voted": "13"}, "3": {"fakeDivined": {"id": 7, "team": "HUMAN"}}, "4": {"fakeDivined": {"id": 11, "team": "HUMAN"}}, "5": {"fakeDivined": {"id": 8, "team": "HUMAN"}}, "6": {"fakeDivined": {"id": 13, "team": "HUMAN"}}}

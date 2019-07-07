@@ -70,16 +70,41 @@ v.0.3
 * Role estimations are now made according to every certain information
   about teams and remaining roles , using Bayesian probabilities
 
+* MEDIUM identifications are parsed
+
 added TODO :
 - WEREWOLF :- When multiple targets have the same heat, KQ keeps
               saying a different target when whispering.
               Should choose a unique target and declare attack once
 
-            - Increase hostility (or other metric) when other wolves
-            suggest that someone is SEER, MEDIUM, and decrease when POSSESSED
+            - Decrease hostility (or other metric) when other wolves
+            suggest that someone is POSSESSED
+
+            - Increase hostility or other metric when other wolves
+            ask to attack someone
 
             - Detect hostility when someone is hostile towards other wolf
 
 - SEER, MEDIUM :- Sharing informations about known teams when the game
                 has progressed enough or when sensible information are found
-- VILLAGER     :
+                (WOLVES when SEER or MEDIUM)
+
+- increase hostility when someone votes for us
+  (!= from declaring VOTE)
+
+v.0.4 :
+
+* Added diary to keep track of past actions
+* WEREWOLF choose only one target at night, and change only if
+  heat changed
+
+* SEER, MEDIUM : reveal all their divinations when a WEREWOLF is seen
+                 or when there's only 60% of alive players
+
+* POSSESSED : Hide as a SEER, and declares everyone is HUMAN
+
+Test :
+SEER v3 vs v4, on 15 players game :
+8/200 vs 10/200
+5 players game :
+83/200 vs 95/200
