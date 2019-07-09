@@ -171,6 +171,26 @@ class Tracker(object):
         updateTextMetrics(self)
 
 
+    def getTeamId(self, team):
+
+        list = []
+        for id in self.profiles:
+
+            profile = self.profiles[id]
+            if(profile['team'] == team):
+                list.append(id)
+        return list
+
+    def getAllId(self):
+
+        list = []
+        for id in self.profiles:
+
+            profile = self.profiles[id]
+            list.append(id)
+        return list
+
+
     def nextDay(self):
         self.currentDay += 1
 
