@@ -115,6 +115,11 @@ v.0.5 :
 * Fixed the way hostility and menace are calculated (using sigmoid to avoid sign multiplication)
 * BODYGUARD has a changing heat function (protects self until 50% alive, and protects others)
 
+<<<<<<< HEAD
+=======
+
+
+>>>>>>> 884b6105b470e02c9e529bb8cda9ecc846592fd9
 Test (5 players) :
 SEER : 52/100
 WEREWOLF : 52/100

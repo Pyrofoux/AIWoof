@@ -1,3 +1,11 @@
+# [💀] Killer Queen
+
+Killer Queen is an agent participating in the AIWolf competition. The goal is to make bots play the Werewolf game together!
+This repository is currently in cleaning, it will soon come with documentation about how Killer Queen works.
+
+
+From the [`ehauckdo/AIWoof`](https://github.com/ehauckdo/AIWoof) repo: 
+
 # What is AIWolf?
 
 Quoting from [aiwolf.org](http://aiwolf.org/en/introduction):
