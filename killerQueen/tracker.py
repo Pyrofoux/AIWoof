@@ -3,7 +3,9 @@ from roleEstimations import *
 from textMetrics import *
 
 
-
+# Tracker is called to keep track of every event during the game.
+# It updates the profile of each player and keeps in memory important information
+ 
 class Tracker(object):
 
     def __init__(self):
@@ -20,16 +22,16 @@ class Tracker(object):
         self.myRole             = "ANY"
 
     def createProfiles(self, baseInfo, gameSetting):
-        #Create profiles containing every informations about a player
+        #Create profiles for each player containing all gathered information
 
-        #Data contained in game setting and base info
+        #Data structure coming from the server and contained in gameSetting and baseInfo
         #gameSetting
         #{"enableNoAttack": false, "enableNoExecution": false, "enableRoleRequest": true, "maxAttackRevote": 1, "maxRevote": 1, "maxSkip": 2, "maxTalk": 10, "maxTalkTurn": 20, "maxWhisper": 10, "maxWhisperTurn": 20, "playerNum": 5, "randomSeed": 8528942025861373791, "roleNumMap": {"BODYGUARD": 0, "MEDIUM": 0, "POSSESSED": 1, "SEER": 1, "FOX": 0, "FREEMASON": 0, "VILLAGER": 2, "ANY": 0, "WEREWOLF": 1}, "talkOnFirstDay": false, "timeLimit": 1000, "validateUtterance": true, "votableInFirstDay": false, "voteVisible": true, "whisperBeforeRevote": false}
 
         #baseInfo
         #{'agentIdx': 5, 'myRole': 'SEER', 'roleMap': {'5': 'SEER'}, 'day': 0, 'remainTalkMap': {'1': 10, '2': 10, '3': 10, '4': 10, '5': 10}, 'remainWhisperMap': {}, 'statusMap': {'1': 'ALIVE', '2': 'ALIVE', '3': 'ALIVE', '4': 'ALIVE', '5': 'ALIVE'}}
 
-
+        #Gathering information given by the server
         self.myId = myId = str(baseInfo['agentIdx'])
         self.gameCompo = gameSetting["roleNumMap"]
 
@@ -44,7 +46,7 @@ class Tracker(object):
                 self.totalHumanPlayers += 1
         self.totalAlivePlayers = self.totalPlayers
 
-
+        #Creating player profiles
         for i in range(gameSetting['playerNum']):
 
             id = str(i+1)
@@ -63,7 +65,7 @@ class Tracker(object):
             profile['roleProba']        = None
             profile['teamProba']        = None
 
-            if(id == myId):
+            if(id == myId): #Create our own profile
 
                 profile['role']         = baseInfo['myRole']
                 profile['team']         = role2divined[profile['role']]
@@ -74,7 +76,7 @@ class Tracker(object):
                 self.myRole             = baseInfo['myRole']
 
 
-            else:
+            else: #Create other players profiles
 
                 profile['isMe']         = False
 
@@ -98,7 +100,7 @@ class Tracker(object):
         updateRoleEstimations(self)
 
     def update(self, baseInfo, diffData, diary):
-        #Updates the profiles according to recent informations
+        #Updates the profiles according to recent information
 
         #Updating alive/dead status
         self.totalAlivePlayers = 0
@@ -116,20 +118,22 @@ class Tracker(object):
             #Eg: If you divined 3 HUMAN, and there are only 3
             # The rest is WEREWOLF
             # + If someone is team WEREWOLF, and there's only one role -> they are that role
-            #
-            if row.type == 'divine':
+
+            if row.type == 'divine': #Parsing the result of our divination
 
                 result = formatDivine(row.text)
                 self.profiles[result['id']]['team'] = result['team']
                 self.profiles[result['id']]['teamKnown'] = True
 
+                #keeping in memory the result of the divination
                 diary.todayNote('divined',{'id':result['id'] ,'team': result['team']})
 
+                #keeping in memory that we have seen a wolf
                 if result['team'] == 'WEREWOLF':
                     diary.nodayNote('seenWolf', True)
 
 
-            elif row.type == 'identify':
+            elif row.type == 'identify': #Parsing the result of our identification
 
                 result = formatDivine(row.text)
                 self.profiles[result['id']]['team'] = result['team']
@@ -153,7 +157,7 @@ class Tracker(object):
 
                     self.profiles[id]['talkHistory'].append(talk)
 
-            elif row.type == 'dead':
+            elif row.type == 'dead': #Parsing information about dead players
 
                 #We consider agents dead in the night as HUMAN for now
                 id = str(row.agent)
@@ -164,11 +168,31 @@ class Tracker(object):
                     profile['team'] = 'HUMAN'
                     profile['teamKnown'] = True
 
-            elif row.type == 'vote':
+            elif row.type == 'vote': #TODO: We could update the hostility metric of players that vote against our team
                 None
 
         updateRoleEstimations(self)
         updateTextMetrics(self)
+
+
+    def getTeamId(self, team):
+
+        list = []
+        for id in self.profiles:
+
+            profile = self.profiles[id]
+            if(profile['team'] == team):
+                list.append(id)
+        return list
+
+    def getAllId(self):
+
+        list = []
+        for id in self.profiles:
+
+            profile = self.profiles[id]
+            list.append(id)
+        return list
 
 
     def nextDay(self):

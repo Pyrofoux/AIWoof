@@ -7,6 +7,7 @@ def updateRoleEstimations(tracker):
     #Copy the role map given at beginning of the game, calculate the team map
     roleMap = dict(tracker.gameCompo)
     teamMap = countTeam(roleMap)
+    
     #Initialize empty probability vector
     voidRoleVector = dict(roleMap)
     for role in voidRoleVector:

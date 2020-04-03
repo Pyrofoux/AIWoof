@@ -1,8 +1,8 @@
 from toolbox import *
 
 
-minimumHeat = float('-inf')
-maximumHeat = float('inf')
+minimumHeat = -999999999999999
+maximumHeat = +999999999999999
 
 
 def heatDivine(id, tracker, profile, roles, myProfile):
@@ -16,8 +16,8 @@ def heatDivine(id, tracker, profile, roles, myProfile):
     if not profile['alive']:
         return minimumHeat
 
-    rolePriority = roles['WEREWOLF'] * 2 + roles['POSSESSED']
-    menace = (profile['hostility']+1)*(profile['complexity']+1)
+    rolePriority = roles['WEREWOLF'] * 2 + roles['POSSESSED'] - roles['VILLAGER'] -2*roles['MEDIUM'] -2*roles['BODYGUARD']
+    menace = profile['hostility']*profile['complexity']
     heat = rolePriority*menace
 
     return heat
@@ -34,9 +34,9 @@ def heatAttack(id, tracker, profile, roles, myProfile):
     if profile['team'] == 'WEREWOLF':
         return minimumHeat
 
-    rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER']
+    rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER'] - roles['POSSESSED'] -2*roles['WEREWOLF']
 
-    menace = (profile['hostility']+1)*(profile['complexity']+1)
+    menace = profile['hostility']*profile['complexity']
     heat = rolePriority*menace
 
     return heat
@@ -53,12 +53,13 @@ def heatVote(id, tracker, profile, roles, myProfile):
     rolePriority = 0
 
     if role2team[myProfile['role']] == 'HUMAN':
-        rolePriority = roles['WEREWOLF'] * 2 + roles['POSSESSED']
+        rolePriority = roles['WEREWOLF'] * 2 + roles['POSSESSED'] - roles['VILLAGER'] -2*roles['MEDIUM'] -2*roles['BODYGUARD']
+
 
     else :
-        rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER']
+        rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER'] - roles['POSSESSED'] -2*roles['WEREWOLF']
 
-    menace = (profile['hostility']+1)*(profile['complexity']+1)
+    menace = profile['hostility']*profile['complexity']
     heat = rolePriority*menace
 
     return heat
@@ -68,6 +69,15 @@ def heatGuard(id, tracker, profile, roles, myProfile):
 
     if not profile['alive']:
         return minimumHeat
+
+
+    if tracker.totalAlivePlayers <= 0.5*tracker.totalPlayers:
+
+        rolePriority = roles['SEER']*3 + roles['MEDIUM']*2 + roles['BODYGUARD']*2 + roles['VILLAGER'] - roles['POSSESSED'] -2*roles['WEREWOLF']
+        menace = profile['hostility']*profile['complexity']
+        heat = rolePriority*menace
+
+        return heat
 
     if profile['isMe']:
         return maximumHeat

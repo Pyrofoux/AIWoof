@@ -50,6 +50,7 @@ class SampleAgent(object):
 
 
 		self.tracker.createProfiles(baseInfo, gameSetting)
+		self.tracker.update(baseInfo, diffData, self.diary)
 		#log(self.tracker.profiles)
 
 
@@ -211,9 +212,7 @@ class SampleAgent(object):
 
 	def finish(self):
 
-		#log(self.tracker.profiles, json = 1)
 		self.tracker.printProfiles()
-		#print(getTimeStamp()+" inside Finish")
 		log(json.dumps(self.diary.notes))
 
 

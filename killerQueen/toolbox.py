@@ -13,15 +13,18 @@ from string import digits
 
 from tabulate import tabulate
 
-#Mapping the corresponding team for a role, when divined
+
+#Maps each role to its corresponding team, according to the rules
+role2team = {
+    "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'WEREWOLF', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
+}
+
+#Maps each role to its corresponding team, when divination is used
 role2divined = {
     "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'HUMAN', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
 }
 
-#Mapping the corresponding team for a role, in absolute
-role2team = {
-    "BODYGUARD": 'HUMAN', "MEDIUM": 'HUMAN', "POSSESSED": 'WEREWOLF', "SEER": 'HUMAN', "FOX": '???', "FREEMASON": '???', "VILLAGER": 'HUMAN', "ANY": '???', "WEREWOLF": 'WEREWOLF'
-}
+
 
 
 def printBaseInfo(base_info):
@@ -79,7 +82,7 @@ def totalDict(dict):
     return total
 
 
-logFileName = "../log.last"
+logFileName = "../latest-log.log"
 logMode     = "print"
 
 def clearLog():

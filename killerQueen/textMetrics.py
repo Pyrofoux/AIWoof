@@ -1,6 +1,7 @@
 from toolbox import *
 import math
 
+# These functions are
 
 def updateTextMetrics(tracker):
     #Evaluate behavioural metrics based on the way agent talk
@@ -16,12 +17,11 @@ def updateTextMetrics(tracker):
         hostilityPatterns = generateHostilityPatterns(tracker, profile, wolves, humans, everybody, tracker.profiles[tracker.myId])
         profile["hostility"]  = calculateHostility(tracker, profile, hostilityPatterns)
         profile["complexity"] = calculateComplexity(profile)
-        #profile[""]
 
 
 
 def calculateHostility(tracker, profile, patterns):
-    #Evaluates hostility towards our agent
+    #Evaluates an hostility metric towards our agent
     #... by recognizing hostile or protectives patterns
 
     if profile['isMe'] :
@@ -45,7 +45,7 @@ def calculateHostility(tracker, profile, patterns):
         return hostility
 
 def calculateComplexity(profile):
-    #Evaluates the complexity of agent thoughts
+    #Evaluates the complexity of an agent...
     #... by counting the number of brackets used :D
 
     texts = getAllTexts(profile)
@@ -60,7 +60,8 @@ def calculateComplexity(profile):
 
 
 def generateHostilityPatterns(tracker, profile, wolves, humans, everybody, me):
-    #Generate patterns we identify as hostile or cooperative
+    #Generate patterns we identify as being hostile or cooperative
+    #If a player says something that matches a pattern, we add to their hostility metric the corresponding score
 
     myName = formatAgentName(me['id'])
     myRole = me['role']
@@ -95,7 +96,7 @@ def generateHostilityPatterns(tracker, profile, wolves, humans, everybody, me):
 
     elif myTeam == "HUMAN":
 
-        #Coming out as a WEREWOLF is a POSSESSED technique, at a time where killing the wolf is more important
+        #Coming out as a WEREWOLF is a POSSESSED technique, at a time where killing wolves is more important
         patterns['COMINGOUT '+profileName+' WEREWOLF'] = -10
 
 

@@ -108,3 +108,14 @@ SEER v3 vs v4, on 15 players game :
 8/200 vs 10/200
 5 players game :
 83/200 vs 95/200
+
+v.0.5 :
+
+* Added hostility patterns to protect teams, detect lies, and identify allies
+* Fixed the way hostility and menace are calculated (using sigmoid to avoid sign multiplication)
+* BODYGUARD has a changing heat function (protects self until 50% alive, and protects others)
+
+Test (5 players) :
+SEER : 52/100
+WEREWOLF : 52/100
+POSSESSED : 59/100
