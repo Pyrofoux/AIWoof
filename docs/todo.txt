@@ -1,0 +1,13 @@
+TODO List :
+Explain what is contained in the repo:
+- the AiWolf server
+- how to run tests
+  - gameSettings.ini , configuration, other agents
+  - RUN.sh or RUN.bat
+- Source of the agent
+  - how it works globally, ref to Killer Queen
+  - create profiles for each player, and for each action
+  use the heat priority function ()
+  - what each file does
+- how to run the agent in competition
+  - folder organisation,  FoxuFoxu/killerQueen, zip

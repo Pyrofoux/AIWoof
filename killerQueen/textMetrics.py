@@ -1,7 +1,7 @@
 from toolbox import *
 import math
 
-# These functions are
+# These functions are here to 
 
 def updateTextMetrics(tracker):
     #Evaluate behavioural metrics based on the way agent talk
