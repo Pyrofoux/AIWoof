@@ -1,11 +1,12 @@
-# ^💀^ **Killer Queen**
+# [💀] Killer Queen
 
+
+*«I'm going to eliminate you now, before you have a chance to speak, so I can sleep soundly again tonight.» - Yoshikage Kira*
 
 <p align="center">
-  <img src="docs/KQ-stand.png">
+  <img width="200px" src="docs/KQ-stand.png">
 </p>
 
-*I'm going to eliminate you now, before you have a chance to speak, so I can sleep soundly again tonight.* - Yoshikage Kira
 
 **Killer Queen** is an agent participating in the International [AIWolf](http://aiwolf.org/en/introduction) Competition. The goal is to make bots play the [Werewolf](https://werewolf.chat/) game together!
 
