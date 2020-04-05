@@ -1,6 +1,9 @@
 # ^💀^ **Killer Queen**
 
-![Killer Queen](docs/KQ-stand.png)
+
+<p align="center">
+  <img src="docs/KQ-stand.png">
+</p>
 
 *I'm going to eliminate you now, before you have a chance to speak, so I can sleep soundly again tonight.* - Yoshikage Kira
 
