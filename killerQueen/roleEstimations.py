@@ -7,7 +7,7 @@ def updateRoleEstimations(tracker):
     #Copy the role map given at beginning of the game, calculate the team map
     roleMap = dict(tracker.gameCompo)
     teamMap = countTeam(roleMap)
-    
+
     #Initialize empty probability vector
     voidRoleVector = dict(roleMap)
     for role in voidRoleVector:
@@ -24,7 +24,7 @@ def updateRoleEstimations(tracker):
         if profile['roleKnown'] and profile['teamKnown']:
 
             role = profile['role']
-            team = role2divined[role]
+            team = role2divined[role] #Important: We consider teams given by a divined action
 
             #1 for the role, 0 for the other
             roleVector = dict(voidRoleVector)
@@ -40,13 +40,6 @@ def updateRoleEstimations(tracker):
             roleMap[role] -= 1
             teamMap[team] -= 1
 
-
-
-    #Calculate probabilities when role is known
-    #+ remove known roles from current team map
-
-
-    #fixedTeamMap      = dict(teamMap)
 
     for id in tracker.profiles:
 
@@ -175,77 +168,3 @@ def checkRoleDeductions(tracker):
         #If we made deductions, recalculate probabilities
         if didDeductions :
             updateRoleEstimations(tracker)
-
-
-def updateRoleEstimationsOld(tracker):
-
-    #Copy the role map given at beginning of the game
-    roleMap = dict(tracker.gameCompo)
-
-    #Initialize empty probability vector
-    voidVector = dict(roleMap)
-    for role in voidVector:
-        voidVector[role] = 0
-
-    #Check the known roles and update roleMap accordingly
-    for id in tracker.profiles:
-
-        profile = tracker.profiles[id]
-        if profile['roleKnown'] :
-
-            roleMap[profile['role']] -= 1
-            roleVector = dict(voidVector)
-            roleVector[profile['role']] = 1
-            profile['roleProba'] = roleVector
-
-    #Check unknown roles
-
-    #Count unknown humans and wolves
-
-    unknown = {}
-    unknown['WEREWOLF'] = 0
-    unknown['HUMAN']    = 0
-    unknown['TOTAL']    = 0
-
-    for role in roleMap:
-
-        if role2divined[role] == "WEREWOLF":
-            unknown['WEREWOLF'] += roleMap[role]
-        else :
-            unknown['HUMAN'] += roleMap[role]
-
-        unknown["TOTAL"] += roleMap[role]
-
-
-    #Calculate probabilities
-    for id in tracker.profiles:
-
-        profile = tracker.profiles[id]
-
-        #If we have info about their team
-        if profile['teamKnown'] :
-
-            if(profile['roleKnown']): #Only check unnown roles
-                continue
-
-            team = profile['team']
-            roleVector = dict(roleMap)
-
-            for role in roleMap:
-
-                if(role2divined[role] == team):
-                    roleVector[role] /= unknown[team]
-                else:
-                    roleVector[role] = 0
-
-        #If we don't have info about their team
-        else:
-
-            roleVector = dict(roleMap)
-            for role in roleMap:
-                roleVector[role] /= unknown["TOTAL"]
-
-        profile['roleProba'] = roleVector
-
-
-    checkRoleDeductions(tracker)

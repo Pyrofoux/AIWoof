@@ -105,7 +105,6 @@ class SampleAgent(object):
 
 			#Reveal all our divinations when we have seen a wolf or when there's 60% alive players
 			if (self.tracker.totalAlivePlayers <= 0.60*self.tracker.totalPlayers)  or (self.diary.readNodayNote('seenWolf') == True):
-			#if  False:
 				divinations = self.diary.readAllNotes(label = "divined")
 
 				dayCount = 0
@@ -160,7 +159,7 @@ class SampleAgent(object):
 		return cb.skip()
 
 	def whisper(self):
-
+		#Only Wolves can whisper
 		self.whisperCount += 1
 
 		targetId = int(heatSort(self.tracker, heatAttack))
@@ -181,6 +180,7 @@ class SampleAgent(object):
 
 			if currentHeat > previousHeat:
 				#Change target
+				self.diary.todayNote("changed target")
 				self.diary.todayNote("attack target", targetId)
 				return cb.attack(targetId)
 			else :
@@ -200,22 +200,21 @@ class SampleAgent(object):
 		return target
 
 	def divine(self):
-
+		#Only SEER can divine
 		target = heatSort(self.tracker, heatDivine)
+		self.diary.todayNote("guarded", target)
 		return target
 
 	def guard(self):
-
+		#only BODYGUARD can guard
 		target = heatSort(self.tracker, heatGuard)
 		self.diary.todayNote("guarded", target)
 		return target
 
 	def finish(self):
 
-		self.tracker.printProfiles()
-		log(json.dumps(self.diary.notes))
-
-
+		self.tracker.logProfiles()
+		self.diary.logNotes()
 
 		return None
 

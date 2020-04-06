@@ -1,7 +1,9 @@
 from toolbox import *
 import math
 
-# These functions are here to 
+# These functions are here to create behavioural metrics based on the way other agents talk.
+# Are they hostile towards us ? Do they seem to be capable of complex thoughts ?
+# An enemy that is both hostile and complex is dangerous !
 
 def updateTextMetrics(tracker):
     #Evaluate behavioural metrics based on the way agent talk

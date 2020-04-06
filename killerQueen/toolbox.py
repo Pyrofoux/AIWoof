@@ -1,5 +1,8 @@
 from __future__ import division
 
+#Useful functions and constants
+
+
 #printing of nested dicts and pandas
 import json as JSON
 import time

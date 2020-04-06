@@ -10,7 +10,7 @@
 
 **Killer Queen** is an agent participating in the International [AIWolf](http://aiwolf.org/en/introduction) Competition. The goal is to make bots play the [Werewolf](https://werewolf.chat/) game together!
 
-This repository contains the source code of Killer Queen, as well as the necessary files to run simulations and documentation on how to setup your own agent.
+This repository contains the source code of Killer Queen, as well as the necessary files to run simulations and documentation on how to setup your own agent. KQ's architecture was designed to be simple, efficient and easily hackable.
 
 For any questions or suggestions, contact me at [yrabii@ensc.fr](mailto:yrabii@ensc.fr), or on [Twitter](twitter.com/Pyrofoux).
 
@@ -52,3 +52,5 @@ See the [Manual folder/](docs/manual/) for information about how to setup your o
 2. Start the server.
 * Windows : launch [RUN.bat](RUN.bat) or [server/AutoStarter.bat](server/AutoStarter.bat)
 * Linux : launch [RUN.sh](RUN.sh) or [server/AutoStarter.bat](server/AutoStarter.bat)
+
+# How 

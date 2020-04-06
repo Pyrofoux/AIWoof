@@ -1,5 +1,9 @@
 from toolbox import *
 
+#Heat functions are used to calculate each agent's priority for being targeted by a specific.
+#The hotter an agent is, the more he has priority to become a target.
+
+
 
 minimumHeat = -999999999999999
 maximumHeat = +999999999999999

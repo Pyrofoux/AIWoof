@@ -5,7 +5,7 @@ from textMetrics import *
 
 # Tracker is called to keep track of every event during the game.
 # It updates the profile of each player and keeps in memory important information
- 
+
 class Tracker(object):
 
     def __init__(self):
@@ -199,7 +199,7 @@ class Tracker(object):
         self.currentDay += 1
 
 
-    def printProfiles(self):
+    def logProfiles(self):
 
         for id in self.profiles:
 
