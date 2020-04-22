@@ -74,5 +74,5 @@ class Diary(object):
         #Return note unbound to a day
         return self.readDayNote(0, label)
 
-    def logNotes():
+    def logNotes(self):
         log(self.notes, json = True)

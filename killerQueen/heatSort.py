@@ -88,7 +88,6 @@ def heatGuard(id, tracker, profile, roles, myProfile):
 
     return 0
 
-
 def heatMap(tracker, heatFunction):
     #Calculate heat of agents according to heatFunction
     agentList = []
@@ -119,7 +118,6 @@ def heatSort(tracker, heatFunction):
     sortedHeat = heatMap(tracker, heatFunction)
     targetId = sortedHeat[0]['id']
     return targetId
-
 
 def getHeat(id, map):
 
