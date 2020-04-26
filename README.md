@@ -32,6 +32,9 @@ See the [Manual folder/](docs/manual/) for information about how to setup your o
 - [Protocol](docs/manual/Protocol.md) for details about the communication protocol between agents
 - [Agent Programming](docs/manual/AgentProgramming.md) for documentations about the functions your agent should use
 
+# How does Killer Queen work ?
+Check this page about's Killer Queen [simple and efficient behavior](docs/behavior.md).
+
 # Contents of this repo
 
 - [/server](server) : the AIWolf server that run Werewolf games with several agents
@@ -52,5 +55,3 @@ See the [Manual folder/](docs/manual/) for information about how to setup your o
 2. Start the server.
 * Windows : launch [RUN.bat](RUN.bat) or [server/AutoStarter.bat](server/AutoStarter.bat)
 * Linux : launch [RUN.sh](RUN.sh) or [server/AutoStarter.bat](server/AutoStarter.bat)
-
-# How 

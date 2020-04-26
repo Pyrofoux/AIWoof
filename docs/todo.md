@@ -11,15 +11,17 @@ Explain what is contained in the repo:
   - as another agent to test yours with
 
 - Source of the agent
-  - [ ] how it works globally, ref to Killer Queen (Heat)
-  - [ ] create profiles for each player, and for each action
+  - [x] how it works globally, ref to Killer Queen (Heat)
+  - [x] create profiles for each player, and for each action
   use the specified heat priority function
     - Bayesian probabilities
     - Hostility metric
     - Complexity metric
     - -> detail of functions : formula + why
     - what can be improved
+
+  - talk behavior
   - [ ] what each file does
-  
+
 - [ ] how to run the agent in competition
   - [ ] folder organisation,  FoxuFoxu/killerQueen, zip
