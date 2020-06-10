@@ -12,7 +12,7 @@
 
 This repository contains the source code of Killer Queen, as well as the necessary files to run simulations and documentation on how to setup your own agent. KQ's architecture was designed to be simple, efficient and easily hackable.
 
-For any questions or suggestions, contact me at [yrabii@ensc.fr](mailto:yrabii@ensc.fr), or on [Twitter](twitter.com/Pyrofoux).
+For any questions or suggestions, contact me at [yrabii@ensc.fr](mailto:yrabii@ensc.fr), or on [Twitter](http://twitter.com/Pyrofoux).
 
 # What is AIWolf?
 
